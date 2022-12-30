@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: #181B20;
+    font-family: 'Inter', sans-serif;
+}
+
+.link{
+    text-decoration: none;
+    color: #B3A05D;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.content{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header__rw{
+    padding: 15px 0 15px;
+}
+
+.lowrow__wrapper{
+    padding: 0 45px 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1305px;
+}
+
+.header__toprow{
+    display: flex;
+    align-items: center;
+}
+
+.header__calls{
+    display: flex;
+    max-width: 422px;
+    gap: 35px;
+    margin-right: 25px;
+}
+
+.call-rectangle{
+    font-size: 12px;
+    max-width: 16px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    background-color: #B3A05D;
+}
+
+.email-link{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.call__wrapper{
+    display: flex;
+    align-items: center;
+    max-width: 180px;
+    gap: 25px;
+    font-size: 12px;
+}
+
+.header-email{
+    margin-right: 20px;
+}
+
+.header__icons{
+    display: flex;
+    gap: 25px;
+    margin-right: 26px;
+}
+
+.header__currency{
+    margin-right: 27px;
+}
+
+.currency-rectangle{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    background-color: #B3A05D;
+}
+
+.currency-changer{
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+}
+
+.dropdowns{
+    color: #b3a05d;
+    margin-right: 44px;
+}
+
+.header__lang-changer{
+    display: flex;
+    color: #B3A05D;
+    gap: 8px;
+    align-items: center;
+    margin-right: 51px;
+}
+.changer-round{
+    background-image: url(/img/icons/Flag_of_Russia.svg);
+    background-position: 50%;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.header-citizenship{
+    padding: 25px 35px;
+    color: #FFFFFF;
+    background-color: #B3A05D;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.wrapper-logo{
+    max-width: 133px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 51px;
+}
+
+.list-item{
+    color: #B3A05D;
+}
+
+.buttns__wrapper{
+    display: flex;
+    gap: 50px;
+}
+
+.wrapper-call{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
