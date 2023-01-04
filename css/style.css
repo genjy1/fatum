@@ -217,12 +217,17 @@ body{
     gap: 7px;
 }
 
+.options__wrapper:nth-child(1){
+    margin-right: 350px;
+}
+
 #options-search{
     border-radius: 50px;
     padding-left: 10px;
     outline: none;
     border: 1px solid #FFFFFF;
     background: transparent;
+    font-family: 'Inter', sans-serif;
 }
 
 #options-search::placeholder{
@@ -345,7 +350,7 @@ label{
 }
 
 .stock__wrapper{
-    padding: 63px 63px 471px 38px;
+    padding: 63px 63px;
 }
 
 .stock-heading{
@@ -416,4 +421,61 @@ input[type='submit']{
 .persdata-link{
     color: #FFFFFF;
     text-decoration: underline;
+}
+
+.reg{
+    margin-top: 106px;
+}
+
+.reg__wrapper{
+    margin-top: 33px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.reg-heading{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.reg__card{
+    max-width: 358px;
+}
+
+.reg__card-img{
+    max-width: 358px
+}
+
+.reg__card-wrapper{
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-city{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.wrapper-value{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.all-regs{
+    background-color: #CFB764;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 29px 35px;
+    display: block;
+    max-width: 273px;
+    margin-top: 49px;
 }
