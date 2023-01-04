@@ -343,3 +343,77 @@ label{
     color: #FFFFFF;
     text-transform: capitalize;
 }
+
+.stock__wrapper{
+    padding: 63px 63px 471px 38px;
+}
+
+.stock-heading{
+    color: #B3A05D;
+    max-width: 230px;
+    margin-top: 19px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 21px;
+}
+
+.stock-description{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 259px;
+    margin-bottom: 18px;
+}
+
+.stock-input{
+    padding: 29px 79px;
+    border: none;
+    border: 2px solid white;
+}
+
+.stock-input::placeholder{
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.stock-input:focus{
+    border: 2px solid #B3A05D;
+    outline: none;
+    box-shadow: inset 0px 0px 10px rgba(94, 94, 94, 0.2);
+}
+
+input[type='submit']{
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    padding: 26px 79px;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.stock__inputs-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.personaldata-checkbox{
+    margin-left: 51px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#personaldata{
+    margin-right: 5px;
+}
+
+.personaldata-text{
+    color: #FFFFFF;
+}
+
+.persdata-link{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
