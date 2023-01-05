@@ -538,6 +538,12 @@ input[type='submit']{
     margin-top: 18px;
 }
 
+.bestoffers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bestoffers-heading{
     text-align: center;
     color: #B3A05D;
@@ -551,6 +557,7 @@ input[type='submit']{
     margin-top: 32px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 7px;
 }
 
@@ -574,6 +581,7 @@ input[type='submit']{
 .col-card{
     max-width: 568px;
     display: flex;
+    padding: 15px 15px 20px;
 }
 
 .col-card > .horizontal-img{
@@ -643,4 +651,101 @@ input[type='submit']{
 .checkflat-description{
     max-width: 313px;
     color: #000000;
+}
+
+.reviews{
+    margin-top: 63px;
+}
+
+.reviews-heading{
+    text-transform: uppercase;
+    text-align: center;
+    color: #B3A05D;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 27px;
+}
+
+.star{
+    width: 55px;
+    background-image: url(../img/icons/Star\ 2.svg);
+    height: 55px;
+    background-repeat: no-repeat;
+}
+
+.main-card{
+    max-width: 672px;
+}
+
+.reviews-desc{
+    margin-top: 7px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+.reviews__stars-row{
+    margin-top: 27px;
+    margin: 0 auto;
+    max-width: 335px;
+    display: flex;
+    gap: 17px;
+}
+
+.reviews__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__slider{
+    max-width: 647px;
+    background-color: #FFFFFF;
+    padding: 36px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+}
+
+
+.stars__container{
+    display: flex;
+    gap: 10px;
+    max-width: 216px;
+    margin:  0 auto;
+}
+
+.stars__container > .star{
+    width: 35px;
+    height: 35px;
+    background-size:contain ;
+}
+
+.reviews-btn{
+    background-color: #B3A05D;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    padding: 25px 20px;
+}
+
+.btn__wrapper{
+    position: relative;
+    margin-top: -125px;
+    display: flex;
+    gap: 724px;
+}
+
+.reviews-btn:first-child{
+    transform: rotate(180deg);
+}
+
+.reviews-all{
+    display: block;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 3px;
+    padding: 29px 20px;
+    margin-top: 112px;
 }
