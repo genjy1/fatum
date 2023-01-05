@@ -749,3 +749,31 @@ input[type='submit']{
     padding: 29px 20px;
     margin-top: 112px;
 }
+
+.placetolive{
+    max-width: 1400px;
+    backdrop-filter: blur(8px);
+    margin-top: 16px;
+    background: url(../img/Frame\ 17.jpg);
+    padding: 18px 153px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 28px;
+}
+
+.placetolive-description{
+    margin-top: 31px;
+    max-width: 357px;
+    margin-bottom: 59px;
+}
+
+.placetolive-link{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.placetolive-heading{
+    max-width: 493px;
+    color: #FFFFFF;
+}
+
