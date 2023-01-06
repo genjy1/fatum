@@ -751,11 +751,9 @@ input[type='submit']{
 }
 
 .placetolive{
-    max-width: 1400px;
     backdrop-filter: blur(8px);
     margin-top: 16px;
     background: url(../img/Frame\ 17.jpg);
-    padding: 18px 153px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 28px;
@@ -777,3 +775,95 @@ input[type='submit']{
     color: #FFFFFF;
 }
 
+.fatumteam{
+    margin-top: 14px;
+    margin-bottom: 100px;
+}
+
+.fatumteam-heading{
+    text-align: center;
+    font-size: 40px;
+    color: #B3A05D;
+    font-weight: 700;
+}
+
+.team__slider{
+    display: flex;
+    gap: 29px;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.team-img{
+    width: 420px;
+}
+
+.team__card{
+    max-width: 444px;
+}
+
+.team-name{
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.team-post{
+    font-size: 14px;
+    margin-bottom: 30px
+}
+
+.team-contacts__wrapper{
+    padding-left: 7px;
+    display: flex;
+    max-width: 319px;
+    margin-bottom: 43px;
+}
+
+.contact-link:not(:last-child){
+    margin-right: 5px;
+}
+
+.contact-link:last-child{
+    margin-right: 26px;
+}
+
+.team-email{
+    margin-bottom: 10px;
+}
+
+.team__card-wrapper{
+    padding:10px 11px 0px;
+}
+
+.slider__cntrls{
+    max-width: 431px;
+    margin:  0 auto;
+}
+
+.slider__cntrls > .btn__wrapper{
+    position: absolute;
+    margin-top: 37px;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.rounds__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 93px;
+    margin-right: 93px;
+}
+
+.info__wrapper{
+    margin-left: 7px;
+}
+
+.slider-round{
+    border: 1px solid #FFFFFF;
+    background-color: #B3A05D;
+    border-radius: 50%;
+    padding: 19px;
+}
