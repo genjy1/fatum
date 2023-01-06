@@ -371,15 +371,22 @@ label{
 }
 
 .stock-input{
-    padding: 29px 79px;
+    width: 265px;
     border: none;
     border: 2px solid white;
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.stock-submit{
+    width: 273px;
 }
 
 .stock-input::placeholder{
     color: #000000;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
+    text-align: center;
 }
 
 .stock-input:focus{
@@ -866,4 +873,25 @@ input[type='submit']{
     background-color: #B3A05D;
     border-radius: 50%;
     padding: 19px;
+}
+
+.invest-inputs{
+    max-width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.invest-heading{
+    margin-top: 19px;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 565px;
+    margin-bottom: 30px;
+}
+
+.invest__list-drpdwn{
+    background-color: #FFFFFF;
+    padding: 29px 69px;
+    border:2px solid white;
 }
