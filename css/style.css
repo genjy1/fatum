@@ -945,3 +945,19 @@ input[type='submit']{
     color: #FFFFFF;
     text-decoration: underline;
 }
+
+.distribution{
+    margin-bottom: 70px;
+}
+
+.distribution-heading{
+    max-width: 814px;
+}
+
+.distribution-description{
+    max-width: 361px;
+}
+
+.distribution-inputs{
+    flex-wrap: nowrap;
+}
