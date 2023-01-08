@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatum Invest - Недвижимость в Турции</title>
+    <script src="./js/script.js" defer></script>
     <link rel="shortcut icon" href="img/icons/logo-short.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -36,7 +37,14 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
             </div>
-            <span  class="header-blog dropdowns">Блог <i class="fa fa-caret-down"></i></span>
+            <span class="header-blog dropdowns">Блог <i class="fa fa-caret-down"></i>
+                <ul class="dropdown">
+                    <div class="dropdown-content">
+                        <li class="dropdown-item"><a href="" class="dropdown-link link">Блог</a></li>
+                        <li class="dropdown-item"><a href="" class="dropdown-link link">Статьи</a></li>
+                    </div>
+                </ul>
+            </span>
             <span class="header-about dropdowns">О нас <i class="fa fa-caret-down"></i></span>
             <div class="header__lang-changer">
                 <div class="changer-round">
@@ -47,7 +55,7 @@
         </div>
         <div class="header__lowrow header__rw">
             <div class="lowrow__wrapper">
-                <img src="img/icons/logo.svg" alt="Fatum Logo" class="wrapper-logo">
+                <a href="index.html" class="logo-link"><img src="img/icons/logo.svg" alt="Fatum Logo" class="wrapper-logo"></a>
                 <nav class="wrapper__nav">
                     <ul class="nav-list">
                         <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
@@ -840,5 +848,21 @@
             <p class="footer-copyright">2022 © FATUM INVEST - недвижимость в Турции</p>
         </div>
     </footer>
+    <div class="callback">
+        <div class="callback__wrapper">
+            <div class="close__wrapper">
+                <h2 class="callback-heading">ОБРАТНЫЙ ЗВОНОК</h2>
+                <button class="heading-close"><div class="close"></div></button>
+            </div>
+            <input type="text" name="" id="callback-name" placeholder="Имя:">
+            <input type="tel" name="" id="callback-phone" placeholder="Телефон:">
+            <textarea name="" id="callback-message" cols="30" rows="5" placeholder="Сообщение:"></textarea>
+            <div class="personaldata-checkbox">
+                <input type="checkbox" name="personaldata" id="personaldata" checked>
+                <p class="personaldata-text modal-text">Даю согласие на обработку <a href="#" class="persdata-link link modal-text">персональных данных</a></p>
+            </div>
+            <input type="submit" value="Отправить" placeholder="Отправить" id="callback-submit">
+        </div>
+    </div>
 </body>
 </html>
