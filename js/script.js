@@ -6,8 +6,9 @@ const close = document.querySelector('.heading-close');
 
 wrapperCall.addEventListener('click',()=>{
     callback.classList.toggle('modal-active')
-})
+});
 
 close.addEventListener('click',()=>{
     callback.classList.toggle('modal-active')
-})
+});
+

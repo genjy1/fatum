@@ -286,7 +286,7 @@ label{
 }
 
 .search-btn{
-    padding: 13px 25px;
+    padding: 13px;
     font-family: 'Inter',sans-serif;
     color: white;
     background: transparent;
@@ -296,7 +296,8 @@ label{
 }
 
 .search-submit{
-    padding: 13px 70px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .search__wrapper{
@@ -389,6 +390,7 @@ label{
 
 .stock-submit{
     width: 273px;
+    background-color: #FFFFFF;
 }
 
 .stock-input::placeholder{
@@ -1246,4 +1248,47 @@ label{
 ::-webkit-scrollbar-thumb {
     background: #B3A05D;
     border-radius: 10px;
+}
+
+.checkflat{
+    background-image: url(../img/Frame\ 19.png);
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.checkflat-heading{
+    color: #B3A05D
+}
+
+.checkflat-description{
+    color: #B3A05D
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.itc-slider__items {
+    counter-reset: slide;
+}
+
+.itc-slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    counter-increment: slide;
+    height: 250px;
+    position: relative;
+}
+
+.itc-slider__item::before {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
 }

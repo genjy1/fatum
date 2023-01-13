@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatum Invest - Недвижимость в Турции</title>
     <script src="./js/script.js" defer></script>
+    <script src="./js/itc-slider.js" defer></script>
     <link rel="shortcut icon" href="img/icons/logo-short.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/itc-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+    </style>
 </head>
 <body>
+
     <header class="header content">
         <div class="header__toprow header__rw">
             <div class="header__calls">
@@ -45,7 +51,7 @@
                     </div>
                 </ul>
             </span>
-            <span class="header-about dropdowns">О нас <i class="fa fa-caret-down"></i></span>
+            <span class="header-about dropdowns">О нас </i></span>
             <div class="header__lang-changer">
                 <div class="changer-round">
                 </div>
@@ -124,8 +130,8 @@
                 </div>
                 <div class="filter__wrapper">
                     <div class="search__wrapper">
-                        <button class="extended-search search-btn">Расширенный поиск</button>
-                        <button class="search-submit search-btn">Найти</button>
+                        <a class="extended-search search-btn">Расширенный поиск</a>
+                        <a class="search-submit search-btn">Найти</a>
                     </div>
                 </div>
             </label>
@@ -612,26 +618,58 @@
                 от клиентов изменивших жизнь с компанией Fatum 
             </p>
             <div class="reviews__slider">
-                <div class="reviews__content">
-                    <div class="text__container">
-                        <p class="content-text">Учитывая ключевые сценарии поведения, повышение уровня гражданского сознания в значительной степени обусловливает важность системы обучения кадров, соответствующей насущным потребностям. Внезапно, интерактивные прототипы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, описаны максимально подробно. Как принято считать, предприниматели в сети интернет неоднозначны и будут призваны к ответу.</p>
+                <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                    <div class="itc-slider__wrapper">
+                      <div class="itc-slider__items">
+                        <div class="itc-slider__item">
+                          <div class="reviews__content">
+                              <div class="text__container">
+                                  <p class="content-text">Учитывая ключевые сценарии поведения, повышение уровня гражданского сознания в значительной степени обусловливает важность системы обучения кадров, соответствующей насущным потребностям. Внезапно, интерактивные прототипы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, описаны максимально подробно. Как принято считать, предприниматели в сети интернет неоднозначны и будут призваны к ответу.</p>
+                              </div>
+                              <div class="stars__container">
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="itc-slider__item">
+                          <!-- Контент 2 слайда -->
+                          <div class="reviews__content">
+                            <div class="text__container">
+                                <p class="content-text">Учитывая ключевые сценарии поведения, повышение уровня гражданского сознания в значительной степени обусловливает важность системы обучения кадров, соответствующей насущным потребностям. Внезапно, интерактивные прототипы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, описаны максимально подробно. Как принято считать, предприниматели в сети интернет неоднозначны и будут призваны к ответу.</p>
+                            </div>
+                            <div class="stars__container">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="itc-slider__item">
+                          <!-- Контент 3 слайда -->
+                          <div class="reviews__content">
+                            <div class="text__container">
+                                <p class="content-text">Учитывая ключевые сценарии поведения, повышение уровня гражданского сознания в значительной степени обусловливает важность системы обучения кадров, соответствующей насущным потребностям. Внезапно, интерактивные прототипы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, описаны максимально подробно. Как принято считать, предприниматели в сети интернет неоднозначны и будут призваны к ответу.</p>
+                            </div>
+                            <div class="stars__container">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="stars__container">
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="btn__wrapper">
-                <button class="reviews-btn">
-                    <img src="./img/icons/Vector 9.svg" alt="arrow" class="reviews-btn_img"> 
-                </button>
-                <button class="reviews-btn">
-                    <img src="./img/icons/Vector 9.svg" alt="arrow" class="reviews-btn_img">
-                </button>
+                    <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                    <button class="itc-slider__btn itc-slider__btn_next"></button>
+                  </div>
             </div>
             <a href="./pages/reviews.html" class="reviews-all link">Показать полные отзывы</a>
         </div>
