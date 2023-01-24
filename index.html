@@ -12,12 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/itc-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        
-    </style>
 </head>
 <body>
-
     <header class="header content">
         <div class="header__toprow header__rw">
             <div class="header__calls">
@@ -34,8 +30,8 @@
                 <a href="mailto:fatuminvest@gmail.com" class="email-link link"><img src="./img/icons/email 1.svg" alt="email" class="email-img">fatuminvest@gmail.com</a>
             </div>
             <div class="header__icons">
-                <a href="./pages/compare.html" class="icons-compare"><img src="img/icons/cmpr.svg" alt="Сравнить" class="icons-img"></a>
-                <a href="./pages/favourites.html" class="icons-compare"><img src="img/icons/fav.svg" alt="Избранное" class="icons-img"></a>
+                <a href="#" class="icons-compare"><img src="img/icons/cmpr.svg" alt="Сравнить" class="icons-img"></a>
+                <a href="#" class="icons-fav"><img src="img/icons/fav.svg" alt="Избранное" class="icons-img"></a>
             </div>
             <div class="header__currency">
                 <div class="currency-rectangle">
@@ -52,11 +48,6 @@
                 </ul>
             </span>
             <span class="header-about dropdowns">О нас </i></span>
-            <div class="header__lang-changer">
-                <div class="changer-round">
-                </div>
-                RUS <i class="fa fa-caret-down"></i>
-            </div>
             <a href="./pages/citizenship.html" class="header-citizenship link">Гражданство в Турции</a>
         </div>
         <div class="header__lowrow header__rw">
@@ -71,10 +62,11 @@
                     </ul>
                 </nav>
                 <div class="buttns__wrapper">
-                    <a href="#" class="wrapper-search"><img src="./img/icons/search 1.svg" alt="Поиск" class="search-img"></a>
                     <a href="#" class="wrapper-call link"><img src="./img/icons/phone 1.svg" alt="Звонок" class="call-img">Обратный звонок</a>
                 </div>
+                <a href='#' class="burger"></a>
             </div>
+            
         </div>
     </header>
     <div class="screen content">
@@ -86,7 +78,7 @@
                 <a href="#" class="booking-link link">Записаться на консультацию</a>
             </button>
         </div>
-        <form action="index.html" method="post">
+        <div action="index.html" method="post" class="form">
             <label for="">
                 <div class="filter__wrapper">
                     <div class="wrapper-options">
@@ -136,24 +128,25 @@
                 </div>
             </label>
             <div class="res__wrapper">Нашлось <span class="res-text">n</span> объектов</div>
-        </form>
+        </div>
         <section class="experience">
-            <h2 class="experience-heading">НАШ ОПЫТ ЭТО</h2>
+            <h2 class="experience-heading">ПРИЧИНЫ ВЫБРАТЬ НАС</h2>
             <div class="experience__cards">
                 <div class="cards__item">
                     <img src="../img/icons/ромб.svg" alt="">
-                    <h3 class="item-heading">Text</h3>
-                    <p class="item-text">Text</p>
+                    <h3 class="item-heading">БЕСПРОЦЕНТНАЯ
+                        РАССРОЧКА</h3>
+                    <p class="item-text">ДО КОНЦА СТРОИТЕЛЬСТВА</p>
                 </div>
                 <div class="cards__item">
                     <img src="../img/icons/ромб.svg" alt="">
-                    <h3 class="item-heading">Text</h3>
-                    <p class="item-text">Text</p>
+                    <h3 class="item-heading">УДОБНЫЙ И</h3>
+                    <p class="item-text">БЕЗОПАСНЫЙ СПОСОБ ОПЛАТЫ</p>
                 </div>
                 <div class="cards__item">
                     <img src="../img/icons/ромб.svg" alt="">
-                    <h3 class="item-heading">Text</h3>
-                    <p class="item-text">Text</p>
+                    <h3 class="item-heading">НА ВСЕХ ЭТАПАХ</h3>
+                    <p class="item-text">УЧАСТИЕ ЮРИСТА</p>
                 </div>
             </div>
         </section>
@@ -232,7 +225,7 @@
         </div>
         <div class="horizontal__cards">
             <div class="horizontal__card main-card">
-                <div class="card-img horizontal-img"></div>
+                <img src="./img/cards/21568037.jpg" alt="" class="img horizontal-img card-img">
                 <div class="cards-text__wrapper">
                     <p class="card-id">ID</p>
                     <p class="card-text">Text</p>
@@ -261,12 +254,13 @@
                     <div class="inf__wrapper">
                         <p class="card-cost">Цена: от $000.000</p>
                         <a href="#" class="learnmore link">Узнать подробнее</a>
+                        <a href="#" class="heart" data-fav></a>
                     </div>
                 </div>
             </div>
             <div class="cards__col">
                 <div class="horizontal__card col-card">
-                    <div class="card-img horizontal-img"></div>
+                    <img src="./img/cards/22856148.png" alt="" class="img horizontal-img card-img">
                     <div class="cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
@@ -299,7 +293,7 @@
                     </div>
                 </div>
                 <div class="horizontal__card col-card">
-                    <div class="card-img horizontal-img"></div>
+                    <img src="./img/cards/34919085.jpg" alt="" class="img horizontal-img card-img">
                     <div class="cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
@@ -328,6 +322,7 @@
                         <div class="inf__wrapper">
                             <p class="card-cost" style="display: none;">Цена: от $000.000</p>
                             <a href="#" class="learnmore link">Узнать подробнее</a>
+                            <a href="#" class="heart" data-fav></a>
                         </div>
                     </div>
                 </div>
@@ -335,22 +330,22 @@
         </div>
         <div class="vertical__cards">
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/41298287.png" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
                         <div class="wrapper__description">
                             <div class="desc-text__wrapper">
                                 <p class="card-district">Район</p>
-                                <p class="card-district">Район</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-rooms">Комнат</p>
-                                <p class="card-rooms">Комнат</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-square">Площадь</p>
-                                <p class="card-square">Площадь</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-toairport">До аэропорта</p>
@@ -368,22 +363,22 @@
                     </div>
             </div>
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/50296383.png" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
                         <div class="wrapper__description">
                             <div class="desc-text__wrapper">
                                 <p class="card-district">Район</p>
-                                <p class="card-district">Район</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-rooms">Комнат</p>
-                                <p class="card-rooms">Комнат</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-square">Площадь</p>
-                                <p class="card-square">Площадь</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-toairport">До аэропорта</p>
@@ -401,22 +396,22 @@
                     </div>
             </div>
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/67185519.jpg" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
                         <div class="wrapper__description">
                             <div class="desc-text__wrapper">
                                 <p class="card-district">Район</p>
-                                <p class="card-district">Район</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-rooms">Комнат</p>
-                                <p class="card-rooms">Комнат</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-square">Площадь</p>
-                                <p class="card-square">Площадь</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-toairport">До аэропорта</p>
@@ -434,22 +429,22 @@
                     </div>
             </div>
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/67663208.jpg" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
                         <div class="wrapper__description">
                             <div class="desc-text__wrapper">
                                 <p class="card-district">Район</p>
-                                <p class="card-district">Район</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-rooms">Комнат</p>
-                                <p class="card-rooms">Комнат</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-square">Площадь</p>
-                                <p class="card-square">Площадь</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-toairport">До аэропорта</p>
@@ -467,22 +462,22 @@
                     </div>
             </div>
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/72268452.jpg" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
                         <div class="wrapper__description">
                             <div class="desc-text__wrapper">
                                 <p class="card-district">Район</p>
-                                <p class="card-district">Район</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-rooms">Комнат</p>
-                                <p class="card-rooms">Комнат</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-square">Площадь</p>
-                                <p class="card-square">Площадь</p>
+                                
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-toairport">До аэропорта</p>
@@ -500,7 +495,7 @@
                     </div>
             </div>
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/84724132.jpg" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
@@ -528,7 +523,7 @@
                     </div>
             </div>
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/97504587.jpg" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
@@ -556,7 +551,7 @@
                     </div>
             </div>
             <div class="vertical__card">
-                <div class="card-img vertical-img"></div>
+                <img src="./img/cards/99404681.jpg" alt="" class="img vertical-img card-img">
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Text</p>
@@ -586,7 +581,7 @@
         </div>
     </div>
     <div class="checkflat content">
-        <div class="stock__wrapper">
+        <div class="stock__wrapper content">
             <img src="../img/icons/ромб.svg" alt="">
             <h2 class="stock-heading checkflat-heading">ПРОВЕРИТЬ КВАРТИРУ НА БЕЗОПАСНОСТЬ</h2>
             <p class="stock-description checkflat-description">Проверка объекта менеджером
@@ -624,7 +619,8 @@
                         <div class="itc-slider__item">
                           <div class="reviews__content">
                               <div class="text__container">
-                                  <p class="content-text">Учитывая ключевые сценарии поведения, повышение уровня гражданского сознания в значительной степени обусловливает важность системы обучения кадров, соответствующей насущным потребностям. Внезапно, интерактивные прототипы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, описаны максимально подробно. Как принято считать, предприниматели в сети интернет неоднозначны и будут призваны к ответу.</p>
+                                    <h3 class="container-title" style="font-weight: 700; text-align: center;padding-bottom: 5px;">Воронин Сергей, предприниматель, Москва</h3>
+                                  <p class="content-text">Достойнейшая компания! В январе купил квартиру через это агентство. Очень рад, что воспользовался рекомендацией знакомых и обратился к ним По сей день ребята с удовольствием помогают нам в решении всяких бытовых вопросов и не только. Поэтому в компетенции Фатум - Инвест, вы можете не сомневаться. И не заметите, как быстро станете неразлучными друзьями</p>
                               </div>
                               <div class="stars__container">
                                   <div class="star"></div>
@@ -686,7 +682,7 @@
             </div>
         </div>
     </div>
-    <div class="fatumteam content">
+    <!-- <div class="fatumteam content">
         <h2 class="fatumteam-heading">КОМАНДА FATUM</h2>
         <div class="team__slider_wrapper">
             <div class="team__slider">
@@ -758,7 +754,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="invest content">
         <div class="stock__wrapper">
             <img src="../img/icons/ромб.svg" alt="">
@@ -902,5 +898,7 @@
             <input type="submit" value="Отправить" placeholder="Отправить" id="callback-submit">
         </div>
     </div>
+    <div class="fav"><div class="fav__wrapper"></div></div>
+    <script src="js/cart.js"></script>
 </body>
 </html>
