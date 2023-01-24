@@ -64,6 +64,18 @@
 }
 @media screen and (max-width:425px) {
 
+    .news{
+        margin-top: 40px;
+    }
+
+    .vertical__cards{
+        gap: 10px;
+    }
+
+    .heading{
+        text-align: center;
+    }
+
     .reviews{
         display: none;
     }
