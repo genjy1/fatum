@@ -8,7 +8,17 @@
     }
     .horizontal__cards{
         display: flex;
+        flex-wrap: wrap;
     }
+
+    .main-card{
+        width: 568px;
+    }
+
+    .main-card > img{
+        width: fit-content;
+    }
+
     .header__toprow{
         display:flex
     }
@@ -353,7 +363,7 @@ input{
 }
 
 .screen-heading > span{
-    color: #B3A05D;
+    color: #CFB764;
 }
 
 .wrapper-booking{
