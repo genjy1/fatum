@@ -1502,3 +1502,13 @@ label{
     flex-direction: column;
     gap: 10px;
 }
+
+.square{
+    display: block;
+    background-color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    margin-bottom: 10px;
+}
