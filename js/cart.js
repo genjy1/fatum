@@ -3,30 +3,24 @@ const favLink = document.querySelector('.icons-fav');
 const headerLinks = document.querySelector('.header__icons');
 
 
-favWrapper.style.display = 'none';
 
 favLink.addEventListener('click',() =>{
-    favWrapper.style.display = 'none';
+    favWrapper.classList.toggle('hidden');
 });
-
 window.addEventListener('click',function (event) {
     const favWrapperSaved = this.localStorage.getItem(favWrapper);
     if (event.target.hasAttribute('data-fav')) {
-        console.log('clicked at fav');
-        const card =  event.target.closest('.horizontal__card');
-        console.log(card);
-        favWrapper.style.display = 'flex';
+        const card =  event.target.closest('.card');
         const prodInf = {
-            id:card.dataset.id,
-            imgSrc: card.querySelector('.img').getAttribute('src'),
+            imgSrc: card.querySelector('.card-img').getAttribute('src'),
         };
-        console.log(prodInf);
+
 
     
         const favItemHTML = `<div class="horizontal__card col-card fav__card">
         <img src="${prodInf.imgSrc}" alt="" class="img horizontal-img card-img">
         <div class="cards-text__wrapper">
-            <p class="card-id">${prodInf.id}</p>
+            <p class="card-id"></p>
             <p class="card-text">Text</p>
             <div class="wrapper__description">
                 <div class="desc-text__wrapper">

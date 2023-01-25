@@ -1461,6 +1461,8 @@ label{
 }
 
 .heart {
+    margin-bottom: 20px;
+    margin: 0 10px;
     background-color: #B3A05D;
     display: inline-block;
     height: 30px;
@@ -1515,14 +1517,16 @@ label{
 .fav__wrapper{
     max-height: 270px;
     position: absolute;
-    backdrop-filter: blur(8px);
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
     overflow-y: scroll;
     left: 50%;
     top: 100px;
     flex-direction: column;
     gap: 10px;
+}
+
+.hidden{
+    display: none;
 }
 
 .square{
