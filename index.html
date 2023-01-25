@@ -65,7 +65,19 @@
                 </div>
                 <a href='#' class="burger"></a>
             </div>
-            
+            <div class="burger__menu content">
+                <ul class="burger__list">
+                    <li class="burger-item">
+                        <a href="#fav" class="icons-fav link burger-fav "><img src="img/icons/fav.svg" alt="Избранное" class="icons-img"></a>
+                    </li>
+                    <li class="burger-item">
+                        <a href="./index.html" class="burger-link link">Главная</a>
+                    </li>
+                    <li class="burger-item">
+                        <a href="./index.html" class="burger-link link">О нас</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="screen content">
@@ -895,12 +907,7 @@
             <input type="submit" value="Отправить" placeholder="Отправить" id="callback-submit">
         </div>
     </div>
-    <div class="fav"><div class="fav__wrapper"></div></div>
-    <div class="burger__menu">
-        <ul class="burger__list">
-
-        </ul>
-    </div>
+    <div class="fav"><div class="fav__wrapper" id="fav"></div></div>
     <script src="js/cart.js"></script>
 </body>
 </html>

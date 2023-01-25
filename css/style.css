@@ -11,6 +11,17 @@
         flex-wrap: wrap;
     }
 
+    .fav__wrapper{
+        max-height: 270px;
+        position: absolute;
+        padding: 20px;
+        overflow-y: scroll;
+        left: 50%;
+        top: 100px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .main-card{
         width: 568px;
     }
@@ -1514,17 +1525,6 @@ label{
     gap: 15%;
 }
 
-.fav__wrapper{
-    max-height: 270px;
-    position: absolute;
-    padding: 20px;
-    overflow-y: scroll;
-    left: 50%;
-    top: 100px;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .hidden{
     display: none;
 }
@@ -1537,4 +1537,48 @@ label{
     border-radius: 5px;
     transform: rotate(45deg);
     margin-bottom: 10px;
+}
+
+.burger-fav{
+    padding: 15px;
+}
+
+.burger-fav::after{
+    content: 'Избранное';  
+    position: relative;
+    top: -7px;
+    left: 6px;
+}
+
+.burger-item{
+    display: flex;
+    justify-content: center;
+}
+
+.burger-item:active{
+    display: flex;
+    background-color: rgba(179, 160, 93,0.5);
+}
+
+.burger-link{
+    padding: 15px;
+}
+
+.burger__menu{
+    display: none;
+    position: absolute;
+    z-index: 6;
+    background-color: #181B20;
+    padding-bottom: 40px;
+}
+
+.active{
+    display: block;
+    transition: display ease-out .3s ;
+}
+
+#fav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
