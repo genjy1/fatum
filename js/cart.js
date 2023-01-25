@@ -1,5 +1,5 @@
 const favWrapper = document.querySelector('.fav__wrapper');
-const favLink = document.querySelector('.icons-fav');
+const favLink = document.querySelector('.fav-img');
 const headerLinks = document.querySelector('.header__icons');
 
 
@@ -8,7 +8,6 @@ favLink.addEventListener('click',() =>{
     favWrapper.classList.toggle('hidden');
 });
 window.addEventListener('click',function (event) {
-    const favWrapperSaved = this.localStorage.getItem(favWrapper);
     if (event.target.hasAttribute('data-fav')) {
         const card =  event.target.closest('.card');
         const prodInf = {

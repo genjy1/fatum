@@ -74,6 +74,11 @@
     }
 }
 @media screen and (max-width:425px) {
+    #fav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .news{
         margin-top: 40px;
@@ -1577,8 +1582,6 @@ label{
     transition: display ease-out .3s ;
 }
 
-#fav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.fav-heading{
+    margin-bottom: 20px;
 }
