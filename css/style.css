@@ -1498,6 +1498,11 @@ label{
     transform: rotate(-45deg);
     width: 28px;
     /* margin-bottom: 20px; */
+    cursor: pointer;
+}
+
+.heart:active{
+    opacity: 0.8;
 }
 
 .heart:before,

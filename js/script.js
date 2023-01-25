@@ -7,7 +7,9 @@ const h2 = document.querySelectorAll('h2');
 const verticalCards = document.querySelectorAll('.vertical__card');
 const horizontalCards = document.querySelectorAll('.horizontal__card');
 const burger = document.querySelector('.burger');
+const heart = document.querySelectorAll('.heart');
 
+heart.forEach(e => e.removeAttribute('href'));
 h2.forEach(e => e.classList.add('heading'));
 wrapperCall.addEventListener('click',()=>{
     callback.classList.toggle('modal-active')

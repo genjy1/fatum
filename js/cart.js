@@ -15,7 +15,7 @@ window.addEventListener('click',function (event) {
         };
 
         if (window.screen.width < 426) {
-            const favItemHTML = `<div class="vertical__card">
+            const favItemHTML = `<div class="vertical__card fav__card">
             <img src="${prodInf.imgSrc}" alt="" class="img vertical-img card-img">
                 <div class="vertical__cards-text__wrapper cards-text__wrapper">
                     <p class="card-id">ID</p>
@@ -45,7 +45,7 @@ window.addEventListener('click',function (event) {
                     <div class="inf__wrapper">
                         <p class="card-cost" style="display: none;">Цена: от $000.000</p>
                         <a href="#" class="learnmore link">Узнать подробнее</a>
-                        <a href="#" class="heart" data-fav></a>
+                        <a href='#' class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
                     </div>
                 </div>
         </div>
