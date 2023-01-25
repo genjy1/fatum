@@ -22,6 +22,10 @@
         gap: 10px;
     }
 
+    .fav-heading{
+        display: none;
+    }
+
     .main-card{
         width: 568px;
     }
@@ -597,6 +601,7 @@ label{
 .stock-submit{
     width: 273px;
     background-color: #FFFFFF;
+
 }
 
 .stock-input::placeholder{
