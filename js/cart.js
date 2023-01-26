@@ -12,14 +12,15 @@ window.addEventListener('click',function (event) {
         const card =  event.target.closest('.card');
         const prodInf = {
             imgSrc: card.querySelector('.card-img').getAttribute('src'),
+            prodName: card.querySelector('.card-text').textContent,
         };
-
+        console.log(prodInf.prodName);
         if (window.screen.width < 426) {
             const favItemHTML = `<div class="vertical__card fav__card">
             <img src="${prodInf.imgSrc}" alt="" class="img vertical-img card-img">
                 <div class="vertical__cards-text__wrapper cards-text__wrapper">
                     <p class="card-id">ID</p>
-                    <p class="card-text">Text</p>
+                    <p class="card-text">${prodInf.prodName}</p>
                     <div class="wrapper__description">
                         <div class="desc-text__wrapper">
                             <p class="card-district">Район</p>
@@ -56,7 +57,7 @@ window.addEventListener('click',function (event) {
         <img src="${prodInf.imgSrc}" alt="" class="img horizontal-img card-img">
         <div class="cards-text__wrapper">
             <p class="card-id"></p>
-            <p class="card-text">Text</p>
+            <p class="card-text">${prodInf.prodName}</p>
             <div class="wrapper__description">
                 <div class="desc-text__wrapper">
                     <p class="card-district">Район</p>

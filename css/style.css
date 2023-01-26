@@ -78,6 +78,12 @@
     }
 }
 @media screen and (max-width:425px) {
+    .header{
+        background-color: #181B20;
+        z-index: 6;
+        position:sticky;
+        top: 0;
+    }
     .heading__wrapper{
         display: flex;
         flex-direction: column;
@@ -1532,12 +1538,10 @@ label{
 .fav__card > .cards-text__wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .fav__card > .cards-text__wrapper > .wrapper__description{
-    flex-wrap:nowrap;
     gap: 10px;
 }
 
