@@ -46,7 +46,7 @@ window.addEventListener('click',function (event) {
                     <div class="inf__wrapper">
                         <p class="card-cost" style="display: none;">Цена: от $000.000</p>
                         <a href="#" class="learnmore link">Узнать подробнее</a>
-                        <a href='#' class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
+                        <a class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
                     </div>
                 </div>
         </div>
@@ -83,7 +83,7 @@ window.addEventListener('click',function (event) {
             <div class="inf__wrapper">
                 <p class="card-cost" style="display: none;">Цена: от $000.000</p>
                 <a href="#" class="learnmore link" style='font-size:12px'>Узнать подробнее</a>
-                <a href='#' class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
+                <a class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
             </div>
         </div>
     </div>
