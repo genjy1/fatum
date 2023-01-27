@@ -88,7 +88,6 @@ window.addEventListener('click',function (event) {
         </div>
     </div>
         `;
-
         favWrapper.insertAdjacentHTML('beforeend',favItemHTML);
         }
     
@@ -99,7 +98,6 @@ window.addEventListener('click',function (event) {
             event.target.closest('.fav__card').remove();
         }   
     };
-    
-    localStorage.setItem('favWrapper','flex');
-})
+    localStorage.setItem('favItemHTML',storageHTML);
+});
 
