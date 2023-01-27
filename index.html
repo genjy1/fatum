@@ -23,7 +23,7 @@
                 </div>
                 <div class="call__wrapper ru__call">
                     <p class="call-rectangle">RU</p>
-                    <a href="#" class="call-link link">+00 000 000 00 00</a>
+                    <a href="#" class="call-link link">+ 7 927 143 04-22</a>
                 </div>
             </div>
             <div class="header-email">
@@ -92,7 +92,7 @@
                 <a href="#" class="booking-link link">Записаться на консультацию</a>
             </button>
         </div>
-        <div action="index.html" method="post" class="form">
+        <div class="form">
             <label for="">
                 <div class="filter__wrapper">
                     <div class="wrapper-options">
@@ -108,8 +108,20 @@
                     </div>
                     <div class="wrapper__search"></div>
                 </div>
-                <div class="filter__wrapper">
+                <div class="filter__wrapper" spellcheck="">
                     <div class="objects__wrapper">
+                        <div class="objects-options">
+                            <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
+                            <div class="options__city"></div>
+                        </div>
+                    </div>
+                    <div class="objects__wrapper">
+                        <div class="objects-options">
+                            <p class="object-name">Цена <i class="fa fa-caret-down"></i></p>
+                            <div class="options__city"><input type="range" name="" id="" min="191 000" max="704 000"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="objects__wrapper">
                         <div class="objects-options">
                             <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
                             <div class="options__city"></div>
@@ -120,23 +132,10 @@
                             <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
                             <div class="options__city"></div>
                         </div>
-                    </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options">
-                            <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                            <div class="options__city"></div>
-                        </div>
-                    </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options">
-                            <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                            <div class="options__city"></div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="filter__wrapper">
                     <div class="search__wrapper">
-                        <a class="extended-search search-btn">Расширенный поиск</a>
                         <a class="search-submit search-btn">Найти</a>
                     </div>
                 </div>
@@ -762,11 +761,11 @@
                 <h2 class="col-heading">Контакты</h2>
                 <div class="col__row">
                     <p class="call-rectangle col-rectangle">TR</p>
-                    <p class="row-phone">+00 000 000 00 00</p>
+                    <p class="row-phone">+90 552 800 44 04</p>
                 </div>
                 <div class="col__row">
-                    <p class="call-rectangle col-rectangle">TR</p>
-                    <p class="row-phone">+00 000 000 00 00</p>
+                    <p class="call-rectangle col-rectangle">RU</p>
+                    <p class="row-phone">+ 7 927 143 04-22</p>
                 </div>
                 <div class="col__row">
                     <p class="call-rectangle col-rectangle email-rectangle"><img src="./img/icons/email white.svg" alt="" class="rectangle-img rectangle-email_img"></p>
@@ -797,10 +796,10 @@
         <div class="footer__wrapper">
             <a href="" class="privacy-policy link">Политика конфиденциальности</a>
             <div class="footer__links-wrapper">
-                <a href="#" class="footer__links-link"><img src="./img/icons/odnoklassniki.svg" alt="" class="links-img odnoklassniki"></a>
-                <a href="#" class="footer__links-link"><img src="./img/icons/instagram_vk.svg" alt="" class="links-img"></a>
-                <a href="#" class="footer__links-link"><img src="./img/icons/tg.svg" alt="" class="links-img"></a>
-                <a href="#" class="footer__links-link"><img src="./img/icons/tik-tok.svg" alt="" class="links-img"></a>
+                <a href="https://ok.ru/group/61177886605448" class="footer__links-link"><img src="./img/icons/odnoklassniki.svg" alt="" class="links-img odnoklassniki"></a>
+                <a href="https://www.instagram.com/fatum_invest/" class="footer__links-link"><img src="./img/icons/instagram_vk.svg" alt="" class="links-img"></a>
+                <a href="https://t.me/fatumliveturkey" class="footer__links-link"><img src="./img/icons/tg.svg" alt="" class="links-img"></a>
+                <a href="https://www.tiktok.com/@fatum_invest" class="footer__links-link"><img src="./img/icons/tik-tok.svg" alt="" class="links-img"></a>
             </div>
             <p class="footer-copyright">2022 © FATUM INVEST - недвижимость в Турции</p>
         </div>
@@ -821,7 +820,7 @@
             <input type="submit" value="Отправить" placeholder="Отправить" id="callback-submit">
         </div>
     </div>
-    <div class="fav"><div class="fav__wrapper" id="fav"><h2 class="fav-heading heading">Избранное</h2></div></div>
+    <div class="fav"><div class="fav__wrapper hidden" id="fav"><h2 class="fav-heading heading">Избранное</h2></div></div>
     <script src="js/cart.js"></script>
 </body>
 </html>

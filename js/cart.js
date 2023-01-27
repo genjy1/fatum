@@ -2,8 +2,6 @@ const favWrapper = document.querySelector('.fav__wrapper');
 const favLink = document.querySelector('.fav-img');
 const headerLinks = document.querySelector('.header__icons');
 
-
-
 favLink.addEventListener('click',() =>{
     favWrapper.classList.toggle('hidden');
 });
@@ -88,16 +86,18 @@ window.addEventListener('click',function (event) {
         </div>
     </div>
         `;
-        favWrapper.insertAdjacentHTML('beforeend',favItemHTML);
-        }
+        localStorage.setItem('favItem',favItemHTML);
     
-        
+        favWrapper.insertAdjacentHTML('beforeend',localStorage.getItem('favItem'));
+        };
     };
     if (event.target.dataset.action === 'minus') {
         if (event.target.closest('.fav__wrapper')) {
             event.target.closest('.fav__card').remove();
         }   
     };
-    localStorage.setItem('favItemHTML',storageHTML);
 });
+if (localStorage.getItem('favItem') !== null) {
+    favWrapper.innerHTML = localStorage.getItem('favItem');
+}
 

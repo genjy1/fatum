@@ -12,7 +12,7 @@
     }
 
     .fav__wrapper{
-        max-height: 270px;
+        max-height: 713px;
         position: absolute;
         padding: 20px;
         overflow-y: scroll;
@@ -479,6 +479,10 @@ label{
 
 .filter__wrapper{
     display: flex;
+}
+
+.filter__wrapper:nth-child(2){
+    justify-content: space-between;
 }
 
 .objects-options{
