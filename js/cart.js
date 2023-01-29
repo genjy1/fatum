@@ -94,6 +94,7 @@ window.addEventListener('click',function (event) {
     if (event.target.dataset.action === 'minus') {
         if (event.target.closest('.fav__wrapper')) {
             event.target.closest('.fav__card').remove();
+            this.localStorage.removeItem('favItem');
         }   
     };
 });

@@ -30,7 +30,7 @@
                 <a href="mailto:fatuminvest@gmail.com" class="email-link link"><img src="./img/icons/email 1.svg" alt="email" class="email-img">fatuminvest@gmail.com</a>
             </div>
             <div class="header__icons">
-                <a href="#" class="icons-fav fav-img"><img src="img/icons/fav.svg" alt="Избранное" class="icons-img"></a>
+                <a href="#" class="icons-fav fav-img link"><img src="img/icons/fav.svg" alt="Избранное" class="icons-img">Избранное</a>
             </div>
             <div class="header__currency">
                 <div class="currency-rectangle">
@@ -54,7 +54,7 @@
                 <a href="index.html" class="logo-link"><img src="img/icons/logo.svg" alt="Fatum Logo" class="wrapper-logo"></a>
                 <nav class="wrapper__nav">
                     <ul class="nav-list">
-                        <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
+                        <li class="list-item"><a href="#bestoffers" class="nav-link link">Лучшие предложения</a></li>
                         <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
                         <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
                         <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
@@ -104,21 +104,25 @@
                             <button class="options-btn">Новостройки</button>
                             <button class="options-btn">Вторичка</button>
                         </div>
-                        <input type="search" name="" id="options-search" placeholder="Поиск по ID...">
                     </div>
-                    <div class="wrapper__search"></div>
+                    <div class="wrapper__search"><input type="search" name="" id="options-search" placeholder="Поиск по ID..."></div>
                 </div>
-                <div class="filter__wrapper" spellcheck="">
+                <div class="filter__wrapper">
                     <div class="objects__wrapper">
                         <div class="objects-options">
-                            <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
+                            <p class="object-name">Город <i class="fa fa-caret-down сity-dropdown"></i></p>
                             <div class="options__city"></div>
+                            <ul class="city__list hidden">
+                                <li class="city-item"><input type="checkbox" value="Все" id="all"><label for="all">Все</label></li>
+                                <li class="city-item"><input type="checkbox" value="Все" id="cyprus"><label for="cyprus">Северный Кипр</label></li>
+                                <li class="city-item"><input type="checkbox" value="Все" id="antalya"><label for="alanya">Аланья</label></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="objects__wrapper">
-                        <div class="objects-options">
-                            <p class="object-name">Цена <i class="fa fa-caret-down"></i></p>
-                            <div class="options__city"><input type="range" name="" id="" min="191 000" max="704 000"></div>
+                        <div class="objects-options" id="price">
+                            <p class="object-name">Цена, до</p>
+                            <div class="options__city"><input type="number" name="" id="priceInput" value="191000" max="704 000" step="10000" placeholder="€"></div>
                         </div>
                     </div>
                     <!-- <div class="objects__wrapper">
@@ -187,42 +191,14 @@
             <div class="reg__card">
                 <img src="./img/backgrnd.png" alt="card backgrnd" class="reg__card-img">
                 <div class="reg__card-wrapper">
-                    <p class="wrapper-city">Город</p>
+                    <p class="wrapper-city">Аланья</p>
                     <p class="wrapper-value"><span class="reg-value">n</span> объектов</p>
                 </div>
             </div>
             <div class="reg__card">
                 <img src="./img/backgrnd.png" alt="card backgrnd" class="reg__card-img">
                 <div class="reg__card-wrapper">
-                    <p class="wrapper-city">Город</p>
-                    <p class="wrapper-value"><span class="reg-value">n</span> объектов</p>
-                </div>
-            </div>
-            <div class="reg__card">
-                <img src="./img/backgrnd.png" alt="card backgrnd" class="reg__card-img">
-                <div class="reg__card-wrapper">
-                    <p class="wrapper-city">Город</p>
-                    <p class="wrapper-value"><span class="reg-value">n</span> объектов</p>
-                </div>
-            </div>
-            <div class="reg__card">
-                <img src="./img/backgrnd.png" alt="card backgrnd" class="reg__card-img">
-                <div class="reg__card-wrapper">
-                    <p class="wrapper-city">Город</p>
-                    <p class="wrapper-value"><span class="reg-value">n</span> объектов</p>
-                </div>
-            </div>
-            <div class="reg__card">
-                <img src="./img/backgrnd.png" alt="card backgrnd" class="reg__card-img">
-                <div class="reg__card-wrapper">
-                    <p class="wrapper-city">Город</p>
-                    <p class="wrapper-value"><span class="reg-value">n</span> объектов</p>
-                </div>
-            </div>
-            <div class="reg__card">
-                <img src="./img/backgrnd.png" alt="card backgrnd" class="reg__card-img">
-                <div class="reg__card-wrapper">
-                    <p class="wrapper-city">Город</p>
+                    <p class="wrapper-city">Северный Кипр</p>
                     <p class="wrapper-value"><span class="reg-value">n</span> объектов</p>
                 </div>
             </div>
@@ -230,12 +206,8 @@
         <a href="pages/objects.html" class="all-regs link content">Смотреть все объекты</a>
     </div>
     <h1 class="fatum content">fatum</h1>
-    <div class="bestoffers content">
+    <div class="bestoffers content" id="bestoffers">
         <h3 class="bestoffers-heading">лучшие предложения</h3>
-        <div class="bestoffers-btns__wrapper content">
-            <button class="bestoffers-btn">Продажа</button>
-            <button class="bestoffers-btn">Аренда</button>
-        </div>
         <div class="horizontal__cards">
             <div class="horizontal__card main-card">
                 <img src="./img/cards/21568037.jpg" alt="" class="img horizontal-img card-img">
@@ -570,7 +542,6 @@
                             </div>
                         </div>
                         <div class="inf__wrapper">
-                            <p class="card-cost" style="display: none;">Цена: от $000.000</p>
                             <a href="#" class="learnmore link">Узнать подробнее</a>
                             <a href="#fav" class="heart" data-fav></a>
                         </div>
@@ -690,9 +661,9 @@
             <p class="stock-description placetolive-description">Бесплатный ознакомительный тур - 
                 прекрасная возможность ознакомиться
                 в правильности выбора</p>
-            <div class="stock__inputs-wrapper">
+            <!-- <div class="stock__inputs-wrapper">
                 <a href ="#" class="stock-submit stock-input placetolive-link link">Узнать больше о туре</a>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="invest content">
