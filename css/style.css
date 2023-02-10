@@ -90,6 +90,11 @@
 }
 @media screen and (max-width:425px) {
 
+    .main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .objects__wrapper{
         margin-bottom: 10px;
     }
@@ -267,6 +272,8 @@
         transform: rotate(32deg);
     }
 }
+
+
 
 body{
     background-color: #181B20;
@@ -448,7 +455,6 @@ button{
     max-width: 696px;
     padding-top: 65px;
     font-weight: bold;
-    color:#FFFFFF;
     margin-bottom: 49px;
 }
 
@@ -856,6 +862,7 @@ label{
 
 .horizontal-img{
     width: 650px;
+    height: auto;
 }
 
 .col-card{
@@ -925,6 +932,8 @@ label{
 
 .vertical-img{
     width: 273px;
+    position: relative;
+    overflow: hidden;
 }
 
 .checkflat-heading{
@@ -1690,6 +1699,7 @@ input[type = 'checkbox']{
 .main{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
     justify-content: space-between;
     margin-top: 20px;
