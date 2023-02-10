@@ -1,10 +1,49 @@
 'use strict'
+let kargijak;
+let blueQuattro;
+let blue;
+let blueVillas;
+let breeze;
+let cliff;
+let cleopatra;
+let beach;
+let bay;
+let mahmutlar;
+let mahmutlarSecond;
+const estate = [
+    kargijak = {
+        city : 'Аланья',
+    },
+    blueQuattro = {
+        city : 'Северный Кипр',
+    },
+    blue = {
+        city : 'Аланья',
+    },
+    blueVillas = {
+        city : '',
+    },
+    breeze = {
+        city : '',
+    },
+    cliff = {
+        city : '',
+    },
+    cleopatra = {
+        city : '',
+    },
+    beach = {
+        city : '',
+    },
+    bay = {
+        city : '',
+    },
+    mahmutlar = {
+        city : '',
+    },
+    mahmutlarSecond = {
+        city : '',
+    }
+];
 
-const cards = document.querySelectorAll('.vertical__card');
-const mainCard = document.querySelector('.main__')
-
-console.log(verticalCards);
-
-// cards.forEach(e => e.classList.remove('vertical__card',  e.classList.remove('card')));
-// cards.forEach(e => e.classList.add('horizontal__card'));
-// cards.forEach(e => e.classList.add('col-card'))
+export { estate };

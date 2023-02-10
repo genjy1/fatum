@@ -89,6 +89,7 @@
     }
 }
 @media screen and (max-width:425px) {
+
     .objects__wrapper{
         margin-bottom: 10px;
     }
@@ -428,11 +429,11 @@ input{
 }
 
 .screen{
-    background-image: url(../img/backgrnd.png);
+    background-image: url(../img/cards/meric-dagli-BqFmufN6xIs-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(4px);
-    backdrop-filter: brightness(.8);
+    backdrop-filter: brightness(.5);
 }
 
 .heading__wrapper{
@@ -1681,7 +1682,8 @@ input[type = 'checkbox']{
 .main{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     gap: 20px;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

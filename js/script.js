@@ -1,5 +1,7 @@
 'use strict'
 
+import {estate} from './object.js'
+
 const wrapperCall = document.querySelectorAll('.wrapper-call');
 const callback = document.querySelector('.callback');
 const close = document.querySelectorAll('.heading-close');
@@ -12,6 +14,16 @@ const priceInput = document.querySelector('#priceInput');
 const cityInput= document.querySelector('.options__city');
 const cityList = document.querySelector('.city__list');
 const cardId = document.querySelectorAll('.card-id');
+const cardsFiltered = [];
+const filterCheckboxes = document.querySelectorAll('.checkbox');
+
+console.log(estate);
+
+filterCheckboxes.forEach(e =>{
+    e.addEventListener('input', () =>{
+        console.log(e.value);
+    })
+})
 
 priceInput.addEventListener('input', () =>{
     if (priceInput.value < 0) {

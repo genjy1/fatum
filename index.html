@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatum Invest - Недвижимость в Турции</title>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" defer type="module"></script>
     <script src="./js/itc-slider.js" defer></script>
     <link rel="shortcut icon" href="img/icons/logo-short.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
@@ -32,12 +32,12 @@
             <div class="header__icons">
                 <a href="#" class="icons-fav fav-img link"><img src="img/icons/fav.svg" alt="Избранное" class="icons-img">Избранное</a>
             </div>
-            <div class="header__currency">
+            <!-- <div class="header__currency">
                 <div class="currency-rectangle">
                     €
                     <i class="fa fa-caret-down"></i>
                 </div>
-            </div>
+            </div> -->
             <span class="header-blog dropdowns">Блог <i class="fa fa-caret-down"></i>
                 <ul class="dropdown">
                     <div class="dropdown-content">
@@ -46,7 +46,6 @@
                     </div>
                 </ul>
             </span>
-            <span class="header-about dropdowns">О нас </i></span>
             <a href="./pages/citizenship.html" class="header-citizenship link">Гражданство в Турции</a>
         </div>
         <div class="header__lowrow header__rw">
@@ -55,9 +54,9 @@
                 <nav class="wrapper__nav">
                     <ul class="nav-list">
                         <li class="list-item"><a href="#bestoffers" class="nav-link link">Лучшие предложения</a></li>
-                        <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
-                        <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
-                        <li class="list-item">Недвижимость <i class="fa fa-caret-down"></i></li>
+                        <li class="list-item"><a href="#news" class="nav-link link">Новости</a></li>
+                        <li class="list-item"><a href="#reviews" class="nav-link link">Отзывы</a></li>
+                        <li class="list-item"><a href="./pages/objects.html" class="nav-link link">Каталог недвижимости</a></li>
                     </ul>
                 </nav>
                 <div class="buttns__wrapper">
@@ -72,9 +71,6 @@
                     </li>
                     <li class="burger-item">
                         <a href="./index.html" class="burger-link link">Главная</a>
-                    </li>
-                    <li class="burger-item">
-                        <a href="./index.html" class="burger-link link">О нас</a>
                     </li>
                     <li class="burger-item">
                         <a class="burger-link wrapper-call link"><img src="./img/icons/phone 1.svg" alt="Звонок" class="call-img">Обратный звонок</a>
@@ -92,8 +88,8 @@
                 <a href="#" class="booking-link link">Записаться на консультацию</a>
             </button>
         </div>
-        <div class="form">
-            <label for="">
+        <form class="form" action="./pages/filter.html" id="filter">
+            <label for="filter">
                 <div class="filter__wrapper">
                     <div class="wrapper-options">
                         <div class="options__wrapper">
@@ -113,9 +109,9 @@
                             <p class="object-name">Город <i class="fa fa-caret-down сity-dropdown"></i></p>
                             <div class="options__city"></div>
                             <ul class="city__list hidden">
-                                <li class="city-item"><input type="checkbox" value="Все" id="all"><label for="all">Все</label></li>
-                                <li class="city-item"><input type="checkbox" value="Все" id="cyprus"><label for="cyprus">Северный Кипр</label></li>
-                                <li class="city-item"><input type="checkbox" value="Все" id="antalya"><label for="alanya">Аланья</label></li>
+                                <li class="city-item"><input type="checkbox" value="Все" id="all" class="checkbox"><label for="all">Все</label></li>
+                                <li class="city-item"><input type="checkbox" value="Северный Кипр" id="cyprus" class="checkbox"><label for="cyprus">Северный Кипр</label></li>
+                                <li class="city-item"><input type="checkbox" value="Аланья" id="antalya" class="checkbox"><label for="alanya">Аланья</label></li>
                             </ul>
                         </div>
                     </div>
@@ -140,12 +136,12 @@
                 </div>
                 <div class="filter__wrapper">
                     <div class="search__wrapper">
-                        <a class="search-submit search-btn">Найти</a>
+                        <a class="search-submit search-btn" href="/pages/filter.html">Найти</a>
                     </div>
                 </div>
             </label>
             <div class="res__wrapper">Нашлось <span class="res-text">n</span> объектов</div>
-        </div>
+        </form>
         <section class="experience">
             <h2 class="experience-heading">ПРИЧИНЫ ВЫБРАТЬ НАС</h2>
             <div class="experience__cards">
@@ -217,7 +213,7 @@
                     <div class="wrapper__description">
                         <div class="desc-text__wrapper">
                             <p class="card-district">Район</p>
-                            <p class="card-district">Район</p>
+                            <p class="card-district">Аланья</p>
                         </div>
                         <div class="desc-text__wrapper">
                             <p class="card-rooms">Комнат</p>
@@ -237,7 +233,7 @@
                         </div>
                     </div>
                     <div class="inf__wrapper">
-                        <p class="card-cost">Цена: от $000.000</p>
+                        <p class="card-cost">Цена: от <span class="cost-span">191.000</span></p>
                         <a href="#" class="learnmore link">Узнать подробнее</a>
                         <a href="#fav" class="heart" data-fav></a>
                     </div>
@@ -252,27 +248,23 @@
                         <div class="wrapper__description">
                             <div class="desc-text__wrapper">
                                 <p class="card-district">Район</p>
-                                <p class="card-district">Район</p>
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-rooms">Комнат</p>
-                                <p class="card-rooms">Комнат</p>
                             </div>
                             <div class="desc-text__wrapper">
-                                <p class="card-square">Площадь</p>
                                 <p class="card-square">Площадь</p>
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-toairport">До аэропорта</p>
-                                <p class="card-toairport">м</p>
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-tosea">До моря</p>
-                                <p class="card-tosea">м</p>
                             </div>
+                            <p class="card-cost">Цена: от $000.000</p>
                         </div>
                         <div class="inf__wrapper">
-                            <p class="card-cost" style="display: none;">Цена: от $000.000</p>
+                            
                             <a href="#" class="learnmore link">Узнать подробнее</a>
                             <a href="#fav" class="heart" data-fav></a>
                         </div>
@@ -596,7 +588,7 @@
         </div>
     </div>
     <div class="reviews content">
-        <h2 class="reviews-heading">отзывы клиентов о нас</h2>
+        <h2 class="reviews-heading" id="reviews">отзывы клиентов о нас</h2>
         <div class="reviews__stars-row">
             <div class="star"></div>
             <div class="star"></div>
@@ -651,7 +643,6 @@
                     <button class="itc-slider__btn itc-slider__btn_next"></button>
                   </div>
             </div>
-            <a href="./pages/reviews.html" class="reviews-all link">Показать полные отзывы</a>
         </div>
     </div>
     <div class="placetolive content">
@@ -674,9 +665,6 @@
             <div class="stock__inputs-wrapper invest-inputs">
                 <input type="text" class="stock-name stock-input" placeholder="Ваше имя">
                 <input type="text" class="stock-number stock-input" placeholder="Ваш телефон">
-                <div class="invest__list-drpdwn">
-                    Будущая аренда
-                </div>
                 <input type="submit" class="stock-submit stock-input" placeholder="Отправить" value="Отправить">
             </div>
             <div class="personaldata-checkbox">
@@ -686,7 +674,7 @@
         </div>
     </div>
     <div class="news content">
-        <h2 class="news-heading">НОВОСТИ</h2>
+        <h2 class="news-heading" id="news">НОВОСТИ</h2>
         <div class="news__wrapper">
             <div class="news__card">
                 <div class="news__card-img"></div>
