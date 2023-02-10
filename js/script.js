@@ -1,6 +1,6 @@
 'use strict'
 
-import {estate} from './object.js'
+// import {estate} from './object.js'
 
 const wrapperCall = document.querySelectorAll('.wrapper-call');
 const callback = document.querySelector('.callback');
@@ -17,11 +17,14 @@ const cardId = document.querySelectorAll('.card-id');
 const cardsFiltered = [];
 const filterCheckboxes = document.querySelectorAll('.checkbox');
 
-console.log(estate);
+
+// console.log(estate);
 
 filterCheckboxes.forEach(e =>{
     e.addEventListener('input', () =>{
-        console.log(e.value);
+        const filterLink = document.querySelector('.search-submit');
+        console.log(filterLink);
+        filterLink.setAttribute('href',`./pages/filter.html?=${e.value}`)
     })
 })
 
@@ -45,8 +48,8 @@ wrapperCall.forEach(e => e.addEventListener('click',()=>{
 }));
 
 burger.addEventListener('click', () =>{
-    const burgerMenu = document.querySelector('.burger__menu')
-    burgerMenu.classList.toggle('active')
+    const burgerMenu = document.querySelector('.burger__menu');
+    burgerMenu.classList.toggle('active');
 });
 
 verticalCards.forEach(e => e.classList.add('card'));

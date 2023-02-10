@@ -436,6 +436,10 @@ input{
     backdrop-filter: brightness(.5);
 }
 
+button{
+    cursor: pointer;
+}
+
 .heading__wrapper{
     padding-bottom: 67px;
 }
@@ -864,6 +868,10 @@ label{
     width: 217px;
     height: 228px;
     margin-right: 24px;
+}
+
+.main-card > .cards-text__wrapper{
+    max-width: 550px;
 }
 
 .col-card > .cards-text__wrapper{
