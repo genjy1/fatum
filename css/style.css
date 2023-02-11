@@ -91,8 +91,7 @@
 @media screen and (max-width:425px) {
 
     .main{
-        padding-left: 50px;
-        padding-right: 50px;
+        flex-direction: column;
     }
 
     .objects__wrapper{
@@ -1630,7 +1629,6 @@ label{
 .burger-fav::after{
     content: 'Избранное';  
     position: relative;
-    top: -7px;
     left: 6px;
 }
 
