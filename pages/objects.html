@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Купить недвижимость в Турции</title>
-    <script src="../js/script.js" defer></script>
-    <script src="../js/object.js" defer></script>
+    <!-- <script src="../js/script.js" defer></script> -->
     <script src="../js/itc-slider.js" defer></script>
+    <script src="../js/filter.js" defer></script>
     <link rel="shortcut icon" href="../img/icons/logo-short.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -33,12 +33,6 @@
             <div class="header__icons">
                 <a href="#" class="icons-fav fav-img link"><img src="../img/icons/fav.svg" alt="Избранное" class="icons-img">Избранное</a>
             </div>
-            <!-- <div class="header__currency">
-                <div class="currency-rectangle">
-                    €
-                    <i class="fa fa-caret-down"></i>
-                </div>
-            </div> -->
             <span class="header-blog dropdowns">Блог <i class="fa fa-caret-down"></i>
                 <ul class="dropdown">
                     <div class="dropdown-content">
@@ -68,7 +62,7 @@
             <div class="burger__menu content">
                 <ul class="burger__list">
                     <li class="burger-item">
-                        <a href="#fav" class="icons-fav link burger-fav "><img src="img/icons/fav.svg" alt="Избранное" class="icons-img"></a>
+                        <a href="#fav" class="icons-fav link burger-fav "><img src="../img/icons/fav.svg" alt="Избранное" class="icons-img"></a>
                     </li>
                     <li class="burger-item">
                         <a href="../index.html" class="burger-link link">Главная</a>
@@ -77,61 +71,6 @@
             </div>
         </div>
     </header>
-    <div class="form content">
-        <label for="">
-            <div class="filter__wrapper">
-                <div class="wrapper-options">
-                    <div class="options__wrapper">
-                        <button class="options-btn">Продажа</button>
-                        <button class="options-btn">Аренда</button>
-                    </div>
-                    <div class="options__wrapper">
-                        <button class="options-btn">Новостройки</button>
-                        <button class="options-btn">Вторичка</button>
-                    </div>
-                    <input type="search" name="" id="options-search" placeholder="Поиск по ID...">
-                </div>
-                <div class="wrapper__search"></div>
-            </div>
-            <div class="filter__wrapper">
-                <div class="objects__wrapper">
-                    <div class="objects-options">
-                        <p class="object-name">Город <i class="fa fa-caret-down сity-dropdown"></i></p>
-                        <div class="options__city"></div>
-                        <ul class="city__list hidden">
-                            <li class="city-item"><input type="checkbox" value="Все" id="all"><label for="all">Все</label></li>
-                            <li class="city-item"><input type="checkbox" value="Все" id="cyprus"><label for="cyprus">Северный Кипр</label></li>
-                            <li class="city-item"><input type="checkbox" value="Все" id="antalya"><label for="alanya">Аланья</label></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="objects__wrapper">
-                    <div class="objects-options" id="price">
-                        <p class="object-name">Цена, до</p>
-                        <div class="options__city"><input type="number" name="" id="priceInput" value="191000" max="704 000" step="10000" placeholder="€"></div>
-                    </div>
-                </div>
-                <!-- <div class="objects__wrapper">
-                    <div class="objects-options">
-                        <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                        <div class="options__city"></div>
-                    </div>
-                </div>
-                <div class="objects__wrapper">
-                    <div class="objects-options">
-                        <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                        <div class="options__city"></div>
-                    </div>
-                </div> -->
-            </div>
-            <div class="filter__wrapper">
-                <div class="search__wrapper">
-                    <a class="search-submit search-btn">Найти</a>
-                </div>
-            </div>
-        </label>
-        <div class="res__wrapper">Нашлось <span class="res-text">n</span> объектов</div>
-    </div>
     <main class="main content">
         <div class="vertical__card">
             <img src="../img/cards/41298287.png" alt="" class="img vertical-img card-img">

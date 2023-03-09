@@ -14,7 +14,17 @@ const cardId = document.querySelectorAll('.card-id');
 const cardsFiltered = [];
 const filterCheckboxes = document.querySelectorAll('.checkbox');
 const city = window.location.search.slice(2,9);
-console.log(city);
+
+
+// console.log(estate);
+
+filterCheckboxes.forEach(e =>{
+    e.addEventListener('input', () =>{
+        const filterLink = document.querySelector('.search-submit');
+        console.log(filterLink);
+        filterLink.setAttribute('href',`./pages/filter.html?=${e.value}`)
+    })
+});
 
 heart.forEach(e => e.removeAttribute('href'));
 h2.forEach(e => e.classList.add('heading'));

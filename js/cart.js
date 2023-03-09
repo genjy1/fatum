@@ -9,13 +9,12 @@ window.addEventListener('click',function (event) {
     if (event.target.hasAttribute('data-fav')) {
         const card =  event.target.closest('.card');
         const prodInf = {
-            imgSrc: card.querySelector('.card-img').getAttribute('src'),
+            imgSrc: card.querySelector('.card-img').getAttribute('style'),
             prodName: card.querySelector('.card-text').textContent,
         };
-        console.log(prodInf.prodName);
         if (window.screen.width < 426) {
             const favItemHTML = `<div class="vertical__card fav__card">
-            <img src="${prodInf.imgSrc}" alt="" class="img vertical-img card-img">
+            <div style="${prodInf.imgSrc}" alt="" class="img vertical-img card-img"><div>
                 <div class="vertical__cards-text__wrapper cards-text__wrapper">
                     <p class="card-id">ID</p>
                     <p class="card-text">${prodInf.prodName}</p>
@@ -52,7 +51,7 @@ window.addEventListener('click',function (event) {
         favWrapper.insertAdjacentHTML('beforeend',favItemHTML);
         }else{
             const favItemHTML = `<div class="horizontal__card col-card fav__card">
-        <img src="${prodInf.imgSrc}" alt="" class="img horizontal-img card-img">
+        <div style="${prodInf.imgSrc}" alt="" class="img horizontal-img card-img"></div>
         <div class="cards-text__wrapper">
             <p class="card-id"></p>
             <p class="card-text">${prodInf.prodName}</p>
@@ -98,7 +97,7 @@ window.addEventListener('click',function (event) {
         }   
     };
 });
-if (localStorage.getItem('favItem') !== null) {
+if (localStorage.getItem('favItem') != null) {
     favWrapper.innerHTML = localStorage.getItem('favItem');
 }
 
