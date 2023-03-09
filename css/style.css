@@ -1718,3 +1718,109 @@ input[type = 'checkbox']{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+.type{
+    margin-top: 150px;
+    background-color:#B3A05D;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px;
+    max-width: 150px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.screen__img{
+    max-width: 1024px;
+    background-image: url(../img/cards/Gazipasha/3-1024x683.jpg);
+    height: 683px;
+    border-radius: 26px;
+}
+
+.card-more_container{
+    width: 1400px;
+}
+
+.img__row{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.more__content{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row-img{
+    max-width: 341px;
+    border-radius: 25px;
+}
+
+.second__screen{
+    margin-top: 40px;
+}
+
+.desc__img{
+    max-width: 1024px;
+    background-image: url(../img/cards/Gazipasha/BİNA\ GİRİŞİ.jpg);
+    height: 683px;
+    border-radius: 26px;
+}
+
+.screen-heading{
+    font-size: 48px;
+}
+
+.desc__list{
+    margin-top: 10px;
+}
+
+.desc__list > li{
+    color: #B3A05D;
+    font-size: 24px;
+}
+
+.desc__wrapper{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.screen-desc{
+    font-size: 32px;
+    font-weight: 700;
+    color:#FFF;
+}
+
+.third__screen_list-item{
+    font-size: 24px;
+    color: #B3A05D;
+    padding-left: 10px;
+}
+
+.desc{
+    font-size: 24px;
+    color: #B3A05D;
+}
+
+.third__screen_list{
+    padding: 10px 0 10px;
+}
+
+.third__screen-desc{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.map__wrapper{
+    margin-top: 60px;
+}
+
+.map-heading{
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
