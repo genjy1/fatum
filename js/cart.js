@@ -11,6 +11,11 @@ window.addEventListener('click',function (event) {
         const prodInf = {
             imgSrc: card.querySelector('.card-img').getAttribute('style'),
             prodName: card.querySelector('.card-text').textContent,
+            prodDistrict:card.querySelector('.card-district').textContent,
+            prodRooms:card.querySelector('.card-rooms').textContent,
+            prodSquare:card.querySelector('.card-square').textContent,
+            prodSea:card.querySelector('.card-tosea').textContent,
+            prodCost:card.querySelector('.card-cost').textContent,
         };
         if (window.screen.width < 426) {
             const favItemHTML = `<div class="vertical__card fav__card">
@@ -20,29 +25,23 @@ window.addEventListener('click',function (event) {
                     <p class="card-text">${prodInf.prodName}</p>
                     <div class="wrapper__description">
                         <div class="desc-text__wrapper">
-                            <p class="card-district">Район</p>
+                            <p class="card-district">${prodInf.prodDistrict}</p>
                             
                         </div>
                         <div class="desc-text__wrapper">
-                            <p class="card-rooms">Комнат</p>
+                            <p class="card-rooms">${prodInf.prodRooms}</p>
                             
                         </div>
                         <div class="desc-text__wrapper">
-                            <p class="card-square">Площадь</p>
+                            <p class="card-square">${prodInf.prodSquare}</p>
                             
                         </div>
                         <div class="desc-text__wrapper">
-                            <p class="card-toairport">До аэропорта</p>
-                            <p class="card-toairport">м</p>
-                        </div>
-                        <div class="desc-text__wrapper">
-                            <p class="card-tosea">До моря</p>
-                            <p class="card-tosea">м</p>
+                            <p class="card-tosea">${prodInf.prodSea}</p>
                         </div>
                     </div>
                     <div class="inf__wrapper">
-                        <p class="card-cost" style="display: none;">Цена: от $000.000</p>
-                        <a href="#" class="learnmore link">Узнать подробнее</a>
+                        <p class="card-cost"">${prodInf.prodCost}</p>
                         <a class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
                     </div>
                 </div>
@@ -56,32 +55,26 @@ window.addEventListener('click',function (event) {
             <p class="card-id"></p>
             <p class="card-text">${prodInf.prodName}</p>
             <div class="wrapper__description">
-                <div class="desc-text__wrapper">
-                    <p class="card-district">Район</p>
-                    <p class="card-district">Район</p>
-                </div>
-                <div class="desc-text__wrapper">
-                    <p class="card-rooms">Комнат</p>
-                    <p class="card-rooms">Комнат</p>
-                </div>
-                <div class="desc-text__wrapper">
-                    <p class="card-square">Площадь</p>
-                    <p class="card-square">Площадь</p>
-                </div>
-                <div class="desc-text__wrapper">
-                    <p class="card-toairport">До аэропорта</p>
-                    <p class="card-toairport">м</p>
-                </div>
-                <div class="desc-text__wrapper">
-                    <p class="card-tosea">До моря</p>
-                    <p class="card-tosea">м</p>
-                </div>
-            </div>
-            <div class="inf__wrapper">
-                <p class="card-cost" style="display: none;">Цена: от $000.000</p>
-                <a href="#" class="learnmore link" style='font-size:12px'>Узнать подробнее</a>
-                <a class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
-            </div>
+            <div class="desc-text__wrapper">
+            <p class="card-district">${prodInf.prodDistrict}</p>
+            
+        </div>
+        <div class="desc-text__wrapper">
+            <p class="card-rooms">${prodInf.prodRooms}</p>
+            
+        </div>
+        <div class="desc-text__wrapper">
+            <p class="card-square">${prodInf.prodSquare}</p>
+            
+        </div>
+        <div class="desc-text__wrapper">
+            <p class="card-tosea">${prodInf.prodSea}</p>
+        </div>
+    </div>
+    <div class="inf__wrapper">
+        <p class="card-cost"">${prodInf.prodCost}</p>
+        <a class="link" data-action="minus" style='font-size:12px'>Удалить из избранного</a>
+    </div>
         </div>
     </div>
         `;

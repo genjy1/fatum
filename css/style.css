@@ -597,7 +597,7 @@ label{
 
 .img{
     background-position: 50%;
-    background-size:auto;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -924,6 +924,7 @@ label{
 }
 
 .vertical__card{
+    display: block;
     max-width: 295px;
     border-radius: 26px;
     padding: 10px 11px 90px;
@@ -937,8 +938,6 @@ label{
 
 .vertical-img{
     width: 273px;
-    position: relative;
-    overflow: hidden;
 }
 
 .checkflat-heading{
