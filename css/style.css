@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @media screen and (min-width:426px) {
+    .screen__img{
+        max-width: 768px;
+        height: 683px;
+    }
+
+    .img__row{
+        display: flex;
+    }
+
+    .mobile-slider{
+        display: none;
+    }
+
     .options__wrapper:nth-child(1){
         margin-right: 350px;
     }
@@ -89,6 +102,24 @@
     }
 }
 @media screen and (max-width:425px) {
+    .more__content{
+        width: 380px;
+    }
+
+    .img__row{
+        display: none;
+    }
+
+    .screen__img{
+        display: none;
+        max-height: 252px;
+        background-position: 50%;
+        background-size: contain;
+    }
+
+    .row-img{
+        min-width: 380px;
+    }
 
     .main{
         flex-direction: column;
@@ -1733,7 +1764,6 @@ input[type = 'checkbox']{
 }
 
 .screen__img{
-    max-width: 1024px;
     background-image: url(../img/cards/Gazipasha/3-1024x683.jpg);
     height: 683px;
     border-radius: 26px;
@@ -1744,8 +1774,8 @@ input[type = 'checkbox']{
 }
 
 .img__row{
+    max-width: 768px;
     margin-top: 10px;
-    display: flex;
     gap: 5px;
     flex-wrap: wrap;
 }
@@ -1756,7 +1786,7 @@ input[type = 'checkbox']{
 }
 
 .row-img{
-    max-width: 341px;
+    max-width: 252px;
     border-radius: 25px;
 }
 
@@ -1767,12 +1797,7 @@ input[type = 'checkbox']{
 .desc__img{
     max-width: 1024px;
     background-image: url(../img/cards/Gazipasha/BİNA\ GİRİŞİ.jpg);
-    height: 683px;
     border-radius: 26px;
-}
-
-.screen-heading{
-    font-size: 48px;
 }
 
 .desc__list{
@@ -1817,10 +1842,39 @@ input[type = 'checkbox']{
 
 .map__wrapper{
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .map-heading{
     font-size: 48px;
     margin-bottom: 10px;
     font-weight: 700;
+}
+
+.card__screen-heading{
+    font-size: 36px;
+    padding: 20px 0 20px;
+}
+
+.feature-item{
+    width: 375px;
+    padding: 0 10px 10px 0;
+    color: #dfd4ad;
+}
+
+.feature-item::before{
+    content: url('../img/icons/check-catalog.svg');
+    padding-right: 5px;
+    height: 32px;
+
+}
+
+.desc-text{
+    color: #B3A05D;
+    font-weight: 700;
+}
+
+.features__list{
+    display: flex;
+    flex-wrap: wrap;
 }
