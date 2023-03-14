@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatum Invest - Недвижимость в Турции</title>
-    <script src="./js/script.js" defer type="module"></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/filter.js" defer></script>
+    <script src="./js/cart.js" defer></script>
     <script src="./js/itc-slider.js" defer></script>
-    <link rel="shortcut icon" href="img/icons/logo-short.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/icons/logo-short.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/itc-slider.css">
@@ -16,36 +18,17 @@
 <body>
     <header class="header content">
         <div class="header__toprow header__rw">
-            <div class="header__calls">
-                <div class="call__wrapper turk__call">
-                    <p class="call-rectangle">TR</p>
-                    <a href="tel:+90 552 800 44 04" class="call-link link">+90 552 800 44 04</a>
-                </div>
-                <div class="call__wrapper ru__call">
-                    <p class="call-rectangle">RU</p>
-                    <a href="#" class="call-link link">+ 7 927 143 04-22</a>
-                </div>
+            <div class="call__wrapper turk__call">
+                <p class="call-rectangle">TR</p>
+                <a href="tel:+90 552 800 44 04" class="call-link link">+90 552 800 44 04</a>
+            </div>
+            <div class="call__wrapper ru__call">
+                <p class="call-rectangle">RU</p>
+                <a href="#" class="call-link link">+ 7 927 143 04-22</a>
             </div>
             <div class="header-email">
                 <a href="mailto:fatuminvest@gmail.com" class="email-link link"><img src="./img/icons/email 1.svg" alt="email" class="email-img">fatuminvest@gmail.com</a>
             </div>
-            <div class="header__icons">
-                <a href="#" class="icons-fav fav-img link"><img src="img/icons/fav.svg" alt="Избранное" class="icons-img">Избранное</a>
-            </div>
-            <!-- <div class="header__currency">
-                <div class="currency-rectangle">
-                    €
-                    <i class="fa fa-caret-down"></i>
-                </div>
-            </div> -->
-            <span class="header-blog dropdowns">Блог <i class="fa fa-caret-down"></i>
-                <ul class="dropdown">
-                    <div class="dropdown-content">
-                        <li class="dropdown-item"><a href="" class="dropdown-link link">Блог</a></li>
-                        <li class="dropdown-item"><a href="" class="dropdown-link link">Статьи</a></li>
-                    </div>
-                </ul>
-            </span>
             <a href="./pages/citizenship.html" class="header-citizenship link">Гражданство в Турции</a>
         </div>
         <div class="header__lowrow header__rw">
@@ -59,6 +42,9 @@
                         <li class="list-item"><a href="./pages/objects.html" class="nav-link link">Каталог недвижимости</a></li>
                     </ul>
                 </nav>
+                <div class="header__icons">
+                    <a href="#fav" class="icons-fav fav-img link"><img src="./img/icons/fav.svg" alt="Избранное" class="icons-img">Избранное</a>
+                </div>
                 <div class="buttns__wrapper">
                     <a href="#" class="wrapper-call link"><img src="./img/icons/phone 1.svg" alt="Звонок" class="call-img">Обратный звонок</a>
                 </div>
@@ -145,7 +131,7 @@
                 </div>
                 <div class="filter__wrapper">
                     <div class="search__wrapper">
-                        <a class="search-submit search-btn" href="">Найти</a>
+                        <a class="search-submit search-btn" href="filter.html">Найти</a>
                     </div>
                 </div>
             </label>
@@ -717,7 +703,7 @@
                 </div>
             </div>
             <div class="footer__col">
-                <h2 class="col-heading">Города</h2>
+                <!-- <h2 class="col-heading">Города</h2> -->
                 <div class="list__wrapper">
                     <ul class="city__list">
                         <li class="city-item">Аланья</li>
@@ -765,6 +751,5 @@
         </div>
     </div>
     <div class="fav"><div class="fav__wrapper hidden" id="fav"><h2 class="fav-heading heading">Избранное</h2></div></div>
-    <script src="js/cart.js"></script>
 </body>
 </html>

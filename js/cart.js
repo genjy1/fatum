@@ -47,7 +47,9 @@ window.addEventListener('click',function (event) {
                 </div>
         </div>
         `;
-        favWrapper.insertAdjacentHTML('beforeend',favItemHTML);
+        localStorage.setItem('favItem',favItemHTML);
+        favWrapper.insertAdjacentHTML('beforeend',localStorage.getItem('favItem'));
+        // favWrapper.insertAdjacentHTML('beforeend',favItemHTML);
         }else{
             const favItemHTML = `<div class="horizontal__card col-card fav__card">
         <div style="${prodInf.imgSrc}" alt="" class="img horizontal-img card-img"></div>
@@ -92,5 +94,5 @@ window.addEventListener('click',function (event) {
 });
 if (localStorage.getItem('favItem') != null) {
     favWrapper.innerHTML = localStorage.getItem('favItem');
-}
+};
 

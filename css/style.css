@@ -13,9 +13,6 @@
         display: none;
     }
 
-    .options__wrapper:nth-child(1){
-        margin-right: 350px;
-    }
     .screen-heading{
         font-size: 60px;
     }
@@ -256,17 +253,17 @@
         transform: scale(0.7);
     }
     .footer__col{
-        margin:  0;
+        /* margin:  0; */
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-bottom: 10px;
     }
     .footer__col:nth-child(1){
         margin: 0;
     }
-    .footer__col:nth-child(2){
+    /* .footer__col:nth-child(2){
         margin: 0;
-    }
+    } */
     .footer__col:nth-child(3){
         margin: 0;
     }
@@ -509,7 +506,6 @@ button{
 .wrapper-options{
     display: flex;
     justify-content: space-between;
-    padding: 0 23px 0 23px;
 
 }
 
@@ -544,9 +540,9 @@ button{
 
 
 .form{
-    background-color: rgba(179, 160, 93,0.5);
+    background: rgb(179,160,93);
+background: linear-gradient(90deg, rgba(179,160,93,1) 0%, rgba(214,191,109,1) 50%, rgba(230,179,0,1) 100%);
     padding: 25px;
-    backdrop-filter: blur(4px);
     border-radius: 26px;
 }
 
@@ -558,11 +554,6 @@ label{
 
 .filter__wrapper{
     display: flex;
-    justify-content: space-between;
-}
-
-.filter__wrapper:nth-child(2){
-    justify-content: space-between;
 }
 
 .objects-options{
@@ -1306,16 +1297,16 @@ label{
 }
 
 .links-img{
-    width: 35px;
+    width: 24px;
 }
 
 .odnoklassniki{
-    width: 25px;
+    width: 18px;
 }
 
 .privacy-policy {
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 18px;
 }
 

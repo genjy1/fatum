@@ -1,6 +1,4 @@
-'use strict'
-
-// import {estate} from './object.js'
+'use strict';
 
 const wrapperCall = document.querySelectorAll('.wrapper-call');
 const callback = document.querySelector('.callback');
@@ -14,20 +12,11 @@ const priceInput = document.querySelector('#priceInput');
 const cityInput= document.querySelector('.options__city');
 const cityList = document.querySelector('.city__list');
 const cardId = document.querySelectorAll('.card-id');
-const cardsFiltered = [];
+// const cardsFiltered = [];
 const filterCheckboxes = document.querySelectorAll('.checkbox');
 
 
 // console.log(estate);
-
-filterCheckboxes.forEach(e =>{
-    e.addEventListener('input', () =>{
-        const filterLink = document.querySelector('.search-submit');
-        console.log(filterLink);
-        filterLink.setAttribute('href',`./pages/filter.html?=${e.value}`)
-    })
-})
-
 priceInput.addEventListener('input', () =>{
     if (priceInput.value < 0) {
         priceInput.value = 191000;
@@ -39,6 +28,15 @@ priceInput.addEventListener('input', () =>{
 
 cityInput.addEventListener('click', () =>{
     cityList.classList.toggle('hidden')
+})
+
+
+filterCheckboxes.forEach(e =>{
+    e.addEventListener('input', () =>{
+        const filterLink = document.querySelector('.search-submit');
+        console.log(filterLink);
+        filterLink.setAttribute('href',`./pages/filter.html?=${e.value}`)
+    })
 })
 
 heart.forEach(e => e.removeAttribute('href'));
