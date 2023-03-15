@@ -14,7 +14,7 @@
     }
 
     .screen-heading{
-        font-size: 60px;
+        font-size: 48px;
     }
     .stock__wrapper{
         padding: 63px 63px;
@@ -463,11 +463,8 @@ input{
 }
 
 .screen{
-    background-image: url(../img/cards/meric-dagli-BqFmufN6xIs-unsplash.jpg);
-    background-size: cover;
+    background-image: url(../img/photo_2023-03-15_17-51-56.png);
     background-repeat: no-repeat;
-    backdrop-filter: blur(4px);
-    backdrop-filter: brightness(.5);
 }
 
 button{
@@ -506,6 +503,7 @@ button{
 .wrapper-options{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 
 }
 
@@ -541,15 +539,15 @@ button{
 
 .form{
     background: rgb(179,160,93);
-background: linear-gradient(90deg, rgba(179,160,93,1) 0%, rgba(214,191,109,1) 50%, rgba(230,179,0,1) 100%);
+    background: linear-gradient(90deg, rgba(179,160,93,1) 0%, rgba(214,191,109,1) 50%, rgba(230,179,0,1) 100%);
     padding: 25px;
     border-radius: 26px;
 }
 
-label{
+label.filter__label{
     display: flex;
-    gap: 40px;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .filter__wrapper{
@@ -571,6 +569,7 @@ label{
 
 .objects__wrapper{
     display: flex;
+    justify-content: space-between;
 }
 
 .options__city{
@@ -625,7 +624,7 @@ label{
 
 .experience-heading{
     font-weight: 700;
-    color: #B3A05D;
+    color: #e9d078;
     font-size: 38px;
 }
 
@@ -1307,13 +1306,13 @@ label{
 .privacy-policy {
     color: #FFFFFF;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footer-copyright{
     color: #FFFFFF;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 100;
+    font-size: 14px;
 }
 
 .col-img{
@@ -1324,7 +1323,7 @@ label{
 .adress{
     max-width: 182px;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     margin-bottom: 60px;
 }
 
@@ -1709,7 +1708,7 @@ label{
 #priceInput{
     background: none;
     color: #FFFFFF;
-    padding: 6px 40px;
+    padding: 14px 40px;
     border: 1px solid white;
     outline: none;
     border-radius: 24px;
@@ -1868,4 +1867,22 @@ input[type = 'checkbox']{
 .features__list{
     display: flex;
     flex-wrap: wrap;
+}
+
+#citySelect{
+    font-family: 'Inter', sans-serif;
+    display: block;
+    background: transparent;
+    color: #FFF;
+    outline: none;
+    padding: 14px 40px;
+    border: 1px solid white;
+    border-radius: 26px;
+}
+
+.citySelect-option{
+    display: block;
+    background: transparent;
+    color: #000000;
+    border-radius: 0;
 }

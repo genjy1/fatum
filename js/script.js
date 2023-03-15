@@ -13,7 +13,7 @@ const cityInput= document.querySelector('.options__city');
 const cityList = document.querySelector('.city__list');
 const cardId = document.querySelectorAll('.card-id');
 // const cardsFiltered = [];
-const filterCheckboxes = document.querySelectorAll('.checkbox');
+const filterOpt = document.querySelector('#citySelect');
 
 
 // console.log(estate);
@@ -30,14 +30,21 @@ cityInput.addEventListener('click', () =>{
     cityList.classList.toggle('hidden')
 })
 
+filterOpt.addEventListener('click', e =>{
+    console.log(filterOpt.value);
+    const filterLink = document.querySelector('.search-submit');
+    filterLink.setAttribute('href',`./pages/filter.html?=${filterOpt.value}`)
+    console.log(filterLink);
+});
 
-filterCheckboxes.forEach(e =>{
-    e.addEventListener('input', () =>{
-        const filterLink = document.querySelector('.search-submit');
-        console.log(filterLink);
-        filterLink.setAttribute('href',`./pages/filter.html?=${e.value}`)
-    })
-})
+// filterOpt.forEach(e =>{
+//     e.addEventListener('click', () =>{
+//         console.log(e)
+        
+//         console.log(filterLink);
+        
+//     })
+// })
 
 heart.forEach(e => e.removeAttribute('href'));
 h2.forEach(e => e.classList.add('heading'));
