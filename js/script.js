@@ -8,43 +8,17 @@ const verticalCards = document.querySelectorAll('.vertical__card');
 const horizontalCards = document.querySelectorAll('.horizontal__card');
 const burger = document.querySelector('.burger');
 const heart = document.querySelectorAll('.heart');
-const priceInput = document.querySelector('#priceInput');
 const cityInput= document.querySelector('.options__city');
 const cityList = document.querySelector('.city__list');
 const cardId = document.querySelectorAll('.card-id');
 // const cardsFiltered = [];
-const filterOpt = document.querySelector('#citySelect');
-
-
-// console.log(estate);
-priceInput.addEventListener('input', () =>{
-    if (priceInput.value < 0) {
-        priceInput.value = 191000;
-        priceInput.style.borderColor = 'red';
-    }else{
-        priceInput.style.borderColor = 'white';
-    }
-})
-
-cityInput.addEventListener('click', () =>{
-    cityList.classList.toggle('hidden')
-})
-
+const filterOpt = document.querySelector('#districtSelect');
 filterOpt.addEventListener('click', e =>{
     console.log(filterOpt.value);
     const filterLink = document.querySelector('.search-submit');
-    filterLink.setAttribute('href',`./pages/filter.html?=${filterOpt.value}`)
+    filterLink.setAttribute('href',`../pages/filter.html?=${filterOpt.value}`)
     console.log(filterLink);
 });
-
-// filterOpt.forEach(e =>{
-//     e.addEventListener('click', () =>{
-//         console.log(e)
-        
-//         console.log(filterLink);
-        
-//     })
-// })
 
 heart.forEach(e => e.removeAttribute('href'));
 h2.forEach(e => e.classList.add('heading'));

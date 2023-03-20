@@ -106,56 +106,47 @@
             </div>
         </div>
     </header>
-    <form class="form content" action="./filter.html" id="filter" style="display: none;">
-        <label for="filter">
-            <div class="filter__wrapper">
-                <div class="wrapper-options">
-                    <div class="options__wrapper">
-                        <button class="options-btn">Продажа</button>
-                        <button class="options-btn">Аренда</button>
-                    </div>
-                    <div class="options__wrapper">
-                        <button class="options-btn">Новостройки</button>
-                        <button class="options-btn">Вторичка</button>
-                    </div>
+    <form class="form content" action="./filter.html" id="filter">
+        <label for="filter" class="filter__label">
+            <div class="wrapper-options">
+                <div class="options__wrapper">
+                    <button class="options-btn">Продажа</button>
+                    <button class="options-btn">Аренда</button>
                 </div>
-                <div class="wrapper__search"><input type="search" name="" id="options-search" placeholder="Поиск по ID..."></div>
+                <div class="options__wrapper">
+                    <button class="options-btn">Новостройки</button>
+                    <button class="options-btn">Вторичка</button>
+                </div>
             </div>
-            <div class="filter__wrapper">
-                <div class="objects__wrapper">
-                    <div class="objects-options">
-                        <p class="object-name">Город <i class="fa fa-caret-down сity-dropdown"></i></p>
-                        <div class="options__city"></div>
-                        <ul class="city__list hidden">
-                            <li class="city-item"><input type="checkbox" value="" id="all" class="checkbox"><label for="all">Все</label></li>
-                            <li class="city-item"><input type="checkbox" value="cyprus" id="cyprus" class="checkbox"><label for="cyprus">Северный Кипр</label></li>
-                            <li class="city-item"><input type="checkbox" value="alanya" id="alanya" class="checkbox"><label for="alanya">Аланья</label></li>
-                        </ul>
-                    </div>
+            <div class="wrapper__search"><input type="search" name="" id="options-search" placeholder="Поиск по ID..."></div>
+            <div class="objects__wrapper">
+                <div class="objects-options">
+                    <select name="" id="citySelect">
+                        <option value="all" class="citySelect-option">Все</option>
+                        <option value="cyprus" class="citySelect-option">Северный Кипр</option>
+                        <option value="alanya" class="citySelect-option">Аланья</option>
+                    </select>
                 </div>
-                <div class="objects__wrapper">
-                    <div class="objects-options" id="price">
-                        <p class="object-name">Цена, до</p>
-                        <div class="options__city"><input type="number" name="" id="priceInput" value="191000" max="704 000" step="10000" placeholder="€"></div>
-                    </div>
-                </div>
-                <!-- <div class="objects__wrapper">
-                    <div class="objects-options">
-                        <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                        <div class="options__city"></div>
-                    </div>
-                </div>
-                <div class="objects__wrapper">
-                    <div class="objects-options">
-                        <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                        <div class="options__city"></div>
-                    </div>
-                </div> -->
             </div>
-            <div class="filter__wrapper">
-                <div class="search__wrapper">
-                    <a class="search-submit search-btn" href="">Найти</a>
+            <div class="objects__wrapper">
+                <div class="objects-options" id="price">
+                    <div class="options__city"><input type="number" name="" id="priceInput" value="191000" max="704 000" step="10000" placeholder="€"></div>
                 </div>
+            </div>
+            <!-- <div class="objects__wrapper">
+                <div class="objects-options">
+                    <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
+                    <div class="options__city"></div>
+                </div>
+            </div>
+            <div class="objects__wrapper">
+                <div class="objects-options">
+                    <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
+                    <div class="options__city"></div>
+                </div>
+            </div> -->
+            <div class="search__wrapper">
+                <a class="search-submit search-btn" href="./pages/filter.html">Найти</a>
             </div>
         </label>
     </form>

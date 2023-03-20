@@ -140,8 +140,17 @@
         padding: 0;
     }
 
-    label{
-        align-items: center;
+    label.filter__label{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #options-search{
+        width: 263px;
+    }
+
+    #citySelect{
+        width: 263px;
     }
 
     .header{
@@ -524,6 +533,7 @@ button{
 
 #options-search{
     padding: 14px 18px;
+    width: 100%;
     border-radius: 50px;
     padding-left: 10px;
     outline: none;
@@ -542,6 +552,9 @@ button{
     background: linear-gradient(90deg, rgba(179,160,93,1) 0%, rgba(214,191,109,1) 50%, rgba(230,179,0,1) 100%);
     padding: 25px;
     border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 label.filter__label{
@@ -595,7 +608,7 @@ label.filter__label{
 
 .search__wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 981px;
 }
 
@@ -660,7 +673,7 @@ label.filter__label{
 
 .stock-heading{
     color: #B3A05D;
-    max-width: 230px;
+    max-width: 530px;
     margin-top: 19px;
     font-weight: 700;
     font-size: 40px;
@@ -671,7 +684,6 @@ label.filter__label{
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
-    max-width: 259px;
     margin-bottom: 18px;
 }
 
@@ -1869,7 +1881,7 @@ input[type = 'checkbox']{
     flex-wrap: wrap;
 }
 
-#citySelect{
+.filter__select{
     font-family: 'Inter', sans-serif;
     display: block;
     background: transparent;
@@ -1880,9 +1892,33 @@ input[type = 'checkbox']{
     border-radius: 26px;
 }
 
-.citySelect-option{
+.select-option{
     display: block;
     background: transparent;
     color: #000000;
     border-radius: 0;
+}
+
+.options__label{
+    color: #FFFFFF;
+}
+
+.cost__wrapper{
+    display: flex;
+    gap: 10px;   
+}
+
+.cost-input{
+    font-family: 'Inter', sans-serif;
+    display: block;
+    background: transparent;
+    color: #FFF;
+    outline: none;
+    padding: 14px 40px;
+    border: 1px solid white;
+    border-radius: 26px;
+}
+
+.cost-input::placeholder{
+    color: #FFFFFF;
 }
