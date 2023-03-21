@@ -80,54 +80,55 @@
         </div>
     </header>
     <form class="form content" action="./filter.html" id="filter">
-        <label for="filter" class="filter__label">
-            <div class="objects__wrapper">
-                <div class="objects-options">
-                    <label for="districtSelect" class="options__label">Районы</label>
-                    <select name="districtSelect" id="districtSelect" class="filter__select">
-                        <option value="all" class="district-option select-option">Все</option>
-                        <option value="cyprus" class="district-option select-option">Северный Кипр</option>
-                        <option value="alanya" class="district-option select-option">Аланья</option>
-                    </select>
-                </div>
-            </div>
-            <div class="objects__wrapper">
-                <div class="objects-options">
-                    <label for="citySelect" class="options__label">Города</label>
-                    <select name="citySelect" id="citySelect" class="filter__select">
-                        <option value="all" class="citySelect-option select-option">Все</option>
-                        <option value="cyprus" class="citySelect-option select-option">Северный Кипр</option>
-                        <option value="alanya" class="citySelect-option select-option">Аланья</option>
-                    </select>
-                </div>
-            </div>
-            <div class="objects__wrapper">
-                <div class="objects-options">
-                    <label for="citySelect" class="options__label">Тип объекта</label>
-                    <select name="citySelect" id="citySelect" class="filter__select">
-                        <option value="all" class="citySelect-option select-option">Все</option>
-                        <option value="flat" class="citySelect-option select-option">Квартиры</option>
-                        <option value="penthouse" class="citySelect-option select-option">Пентхаусы</option>
-                        <option value="duplex" class="citySelect-option select-option">Дуплексы</option>
-                        <option value="villa" class="citySelect-option select-option">Виллы</option>
-                        <option value="land" class="citySelect-option select-option">Земля</option>
-                        <option value="commerce" class="citySelect-option select-option">Коммерческая</option>
-                        <option value="hotel" class="citySelect-option select-option">Отели</option>
-                    </select>
-                </div>
-            </div>
-            <div class="objects__wrapper">
-                <div class="objects-options" id="price">
-                    <label for="citySelect" class="options__label">Цена</label>
-                    <div class="cost__wrapper">
-                        <input type="text" name="" id="costFrom" class="cost-input" placeholder="От">
-                        <input type="text" name="" id="costTo" class="cost-input" placeholder="До">
+        <div class="wrapper__search"><input type="search" name="" id="options-search" placeholder="Поиск по ID..."></div>
+            <label for="filter" class="filter__label">
+                    <div class="objects__wrapper">
+                        <div class="objects-options">
+                            <label for="districtSelect" class="options__label">Районы</label>
+                            <select name="districtSelect" id="districtSelect" class="filter__select">
+                                <option value="all" class="district-option select-option">Все</option>
+                                <option value="cyprus" class="district-option select-option">Северный Кипр</option>
+                                <option value="alanya" class="district-option select-option">Аланья</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <div class="objects__wrapper">
+                        <div class="objects-options">
+                            <label for="citySelect" class="options__label">Города</label>
+                            <select name="citySelect" id="citySelect" class="filter__select">
+                                <option value="all" class="citySelect-option select-option">Все</option>
+                                <option value="cyprus" class="citySelect-option select-option">Северный Кипр</option>
+                                <option value="alanya" class="citySelect-option select-option">Аланья</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="objects__wrapper">
+                        <div class="objects-options">
+                            <label for="citySelect" class="options__label">Тип объекта</label>
+                            <select name="citySelect" id="citySelect" class="filter__select">
+                                <option value="all" class="citySelect-option select-option">Все</option>
+                                <option value="flat" class="citySelect-option select-option">Квартиры</option>
+                                <option value="penthouse" class="citySelect-option select-option">Пентхаусы</option>
+                                <option value="duplex" class="citySelect-option select-option">Дуплексы</option>
+                                <option value="villa" class="citySelect-option select-option">Виллы</option>
+                                <option value="land" class="citySelect-option select-option">Земля</option>
+                                <option value="commerce" class="citySelect-option select-option">Коммерческая</option>
+                                <option value="hotel" class="citySelect-option select-option">Отели</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="objects__wrapper">
+                        <div class="objects-options" id="price">
+                            <label for="citySelect" class="options__label">Цена</label>
+                            <div class="cost__wrapper">
+                                <input type="text" name="" id="costFrom" class="cost-input" placeholder="От">
+                                <input type="text" name="" id="costTo" class="cost-input" placeholder="До">
+                            </div>
+                        </div>
+                    </div>
     </label>
     <div class="search__wrapper">
-        <a class="search-submit search-btn" href="./pages/filter.html">Найти</a>
+        <a class="search-submit search-btn" href="filter.html">Найти</a>
     </div>
     </form>
     <main class="main content">
@@ -237,7 +238,7 @@
                     </div>
             </div>
             <div class="vertical__card" data-city="alanya">
-                <div style = "background-image: url('../img/cards/Gazipasha/GENEL\ GÖRÜNÜM.jpg')" alt="" class="img vertical-img card-img"></div>
+                <div style = "background-image: url('../img/cards/Gazipasha/GENELGÖRÜNÜM.jpg')" alt="" class="img vertical-img card-img"></div>
                     <div class="vertical__cards-text__wrapper cards-text__wrapper">
                         <p class="card-id">ID</p>
                         <p class="card-text">Квартира в Газипаше</p>
