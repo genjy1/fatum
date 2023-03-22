@@ -1,6 +1,6 @@
 'use strict';
 const city = window.location.search.slice(2,9);
-c
+
 
 if (city === 'cyprus') {
     document.querySelectorAll('.vertical__card').forEach(e =>{
