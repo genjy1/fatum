@@ -11,6 +11,14 @@ const heart = document.querySelectorAll('.heart');
 const cityInput= document.querySelector('.options__city');
 const cityList = document.querySelector('.city__list');
 const cardId = document.querySelectorAll('.card-id');
+const moreFilters = document.querySelector('.more-filters');
+
+moreFilters.addEventListener('click', e =>{
+    e.preventDefault();
+    const moreFiltersLabel = document.querySelector('.more-filters__label');
+    moreFiltersLabel.classList.toggle('active__filter');
+})
+
 // const cardsFiltered = [];
 const filterOpt = document.querySelector('#districtSelect');
 filterOpt.addEventListener('click', e =>{
