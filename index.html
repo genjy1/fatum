@@ -107,8 +107,7 @@
                             <label for="districtSelect" class="options__label">Районы</label>
                             <select name="districtSelect" id="districtSelect" class="filter__select">
                                 <option value="all" class="district-option select-option">Все</option>
-                                <option value="cyprus" class="district-option select-option">Северный Кипр</option>
-                                <option value="alanya" class="district-option select-option">Аланья</option>
+                                <option value="gazipasha" class="district-option select-option">Газипаша</option>
                             </select>
                         </div>
                     </div>
@@ -190,6 +189,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="objects__wrapper reset__wrapper">           
+                    <button type="reset" class="btn">Сбросить фильтр</button>
                 </div>
             </label>
             <div class="search__wrapper">
@@ -353,10 +355,10 @@
                         <p class="card-text">Квартира в Газипаше</p>
                         <div class="wrapper__description">
                             <div class="desc-text__wrapper">
-                                <p class="card-district">Район: Газипаша </p>
+                                <p class="card-district" data-district="gazipasha">Район: Газипаша </p>
                             </div>
                             <div class="desc-text__wrapper">
-                                <p class="card-rooms">Комнат: 2+1 дуплекс</p>
+                                <p class="card-rooms">Комнат: <span class="rooms-value" data-rooms="2+1">2+1</span>дуплекс</p>
                             </div>
                             <div class="desc-text__wrapper">
                                 <p class="card-square">Площадь 106 м2 и 53м2</p>

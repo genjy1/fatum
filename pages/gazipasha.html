@@ -108,47 +108,113 @@
     </header>
     <form class="form content" action="./filter.html" id="filter">
         <label for="filter" class="filter__label">
-            <div class="wrapper-options">
-                <div class="options__wrapper">
-                    <button class="options-btn">Продажа</button>
-                    <button class="options-btn">Аренда</button>
-                </div>
-                <div class="options__wrapper">
-                    <button class="options-btn">Новостройки</button>
-                    <button class="options-btn">Вторичка</button>
-                </div>
-            </div>
-            <div class="wrapper__search"><input type="search" name="" id="options-search" placeholder="Поиск по ID..."></div>
             <div class="objects__wrapper">
                 <div class="objects-options">
-                    <select name="" id="citySelect">
-                        <option value="all" class="citySelect-option">Все</option>
-                        <option value="cyprus" class="citySelect-option">Северный Кипр</option>
-                        <option value="alanya" class="citySelect-option">Аланья</option>
+                    <label for="citySelect" class="options__label">Города</label>
+                    <select name="citySelect" id="citySelect" class="filter__select">
+                        <option value="all" class="citySelect-option select-option">Все</option>
+                        <option value="cyprus" class="citySelect-option select-option">Северный Кипр</option>
+                        <option value="alanya" class="citySelect-option select-option">Аланья</option>
                     </select>
                 </div>
             </div>
-            <div class="objects__wrapper">
-                <div class="objects-options" id="price">
-                    <div class="options__city"><input type="number" name="" id="priceInput" value="191000" max="704 000" step="10000" placeholder="€"></div>
+                <div class="objects__wrapper">
+                    <div class="objects-options">
+                        <label for="districtSelect" class="options__label">Районы</label>
+                        <select name="districtSelect" id="districtSelect" class="filter__select">
+                            <option value="all" class="district-option select-option">Все</option>
+                            <option value="cyprus" class="district-option select-option">Северный Кипр</option>
+                            <option value="alanya" class="district-option select-option">Аланья</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options">
+                        <label for="citySelect" class="options__label">Комнат</label>
+                        <select name="citySelect" id="citySelect" class="filter__select">
+                            <option value="1+0" class="citySelect-option select-option">1+0</option>
+                            <option value="1+1" class="citySelect-option select-option">1+1</option>
+                            <option value="2+1" class="citySelect-option select-option">2+1</option>
+                            <option value="3+1" class="citySelect-option select-option">3+1</option>
+                            <option value="4+1" class="citySelect-option select-option">4+1</option>
+                            <option value="5+1" class="citySelect-option select-option">5+1</option>
+                            <option value="6+1" class="citySelect-option select-option">6+1</option>
+                            <option value="7+1" class="citySelect-option select-option">7+1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="price">
+                        <label for="citySelect" class="options__label">Цена</label>
+                        <div class="cost__wrapper range__wrapper">
+                            <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                            <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="idNumber">
+                        <label for="citySelect" class="options__label">ID</label>
+                        <div class="search__wrapper">
+                            <input type="search" name="idFinder" id="options-search" placeholder="№">
+                        </div>
+                    </div>
+                </div>
+        </label>
+        <label for="filter" class="more-filters__label">
+            <div class="more-filters__label_wrapper">
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="price">
+                        <label for="citySelect" class="options__label">Площадь</label>
+                        <div class="cost__wrapper range__wrapper">
+                            <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                            <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="price">
+                        <label for="citySelect" class="options__label">Инфраструктура</label>
+                        <div class="search__wrapper">
+                            <input type="search" name="idFinder" id="options-search" placeholder="№">
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="price">
+                        <label for="citySelect" class="options__label">Преимущества</label>
+                        <div class="search__wrapper">
+                            <input type="search" name="idFinder" id="options-search" placeholder="№">
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="price">
+                        <label for="citySelect" class="options__label">До моря</label>
+                        <div class="sea__wrapper range__wrapper">
+                            <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                            <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="price">
+                        <label for="citySelect" class="options__label">Этажность</label>
+                        <div class="floor__wrapper range__wrapper">
+                            <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                            <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="objects__wrapper">
-                <div class="objects-options">
-                    <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                    <div class="options__city"></div>
-                </div>
-            </div>
-            <div class="objects__wrapper">
-                <div class="objects-options">
-                    <p class="object-name">Город <i class="fa fa-caret-down"></i></p>
-                    <div class="options__city"></div>
-                </div>
-            </div> -->
-            <div class="search__wrapper">
-                <a class="search-submit search-btn" href="./pages/filter.html">Найти</a>
+            <div class="objects__wrapper reset__wrapper">           
+                <button type="reset" class="btn">Сбросить фильтр</button>
             </div>
         </label>
+        <div class="search__wrapper">
+            <button class="more-filters btn">Больше фильтров</button>
+            <a class="search-submit search-btn" href="./pages/filter.html">Найти</a>
+        </div>
     </form>
     <main class="card__more more__content">
         <div class="card-more">

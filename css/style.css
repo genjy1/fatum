@@ -1936,3 +1936,7 @@ input[type = 'checkbox']{
     align-items: center;
     justify-content: space-between;
 }
+
+.reset__wrapper{
+    margin-top: 10px;
+}
