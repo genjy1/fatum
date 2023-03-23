@@ -59,6 +59,7 @@ close.forEach(e => e.addEventListener('click',()=>{
 }));
 
 for (let i = 0; i < cardId.length; i++) {
-    cardId[i].setAttribute('data-id',i);
+    let cards = document.querySelectorAll('.card')
+    cards[i].setAttribute('data-id',i);
     cardId[i].textContent = 'FA' + i;
 }

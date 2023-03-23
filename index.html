@@ -9,6 +9,7 @@
     <script src="./js/filter.js" defer></script>
     <script src="./js/cart.js" defer></script>
     <script src="./js/itc-slider.js" defer></script>
+    <script src="./js/search.js"></script>
     <link rel="shortcut icon" href="./img/icons/logo-short.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -151,8 +152,8 @@
                             <div class="objects-options" id="price">
                                 <label for="citySelect" class="options__label">Площадь</label>
                                 <div class="cost__wrapper range__wrapper">
-                                    <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
-                                    <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                                    <input type="text" name="squareFrom" id="squareFrom" class="cost-input" placeholder="От">
+                                    <input type="text" name="squareTo" id="squareTo" class="cost-input" placeholder="До">
                                 </div>
                             </div>
                         </div>
@@ -160,7 +161,7 @@
                             <div class="objects-options" id="price">
                                 <label for="citySelect" class="options__label">Инфраструктура</label>
                                 <div class="search__wrapper">
-                                    <input type="search" name="idFinder" id="options-search" placeholder="№">
+                                    <!-- <input type="search" name="idFinder" id="options-search" placeholder="№"> -->
                                 </div>
                             </div>
                         </div>
@@ -168,7 +169,7 @@
                             <div class="objects-options" id="price">
                                 <label for="citySelect" class="options__label">Преимущества</label>
                                 <div class="search__wrapper">
-                                    <input type="search" name="idFinder" id="options-search" placeholder="№">
+                                    <!-- <input type="search" name="idFinder" id="options-search" placeholder="№"> -->
                                 </div>
                             </div>
                         </div>
@@ -176,8 +177,8 @@
                             <div class="objects-options" id="price">
                                 <label for="citySelect" class="options__label">До моря</label>
                                 <div class="sea__wrapper range__wrapper">
-                                    <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
-                                    <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                                    <input type="text" name="seaFrom" id="seaFrom" class="cost-input" placeholder="От">
+                                    <input type="text" name="seaTo" id="seaTo" class="cost-input" placeholder="До">
                                 </div>
                             </div>
                         </div>
@@ -185,8 +186,8 @@
                             <div class="objects-options" id="price">
                                 <label for="citySelect" class="options__label">Этажность</label>
                                 <div class="floor__wrapper range__wrapper">
-                                    <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
-                                    <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                                    <input type="text" name="floorFrom" id="floorFrom" class="cost-input" placeholder="От">
+                                    <input type="text" name="floorTo" id="floorTo" class="cost-input" placeholder="До">
                                 </div>
                             </div>
                         </div>
@@ -197,7 +198,7 @@
                 </label>
                 <div class="search__wrapper">
                     <button class="more-filters btn">Больше фильтров</button>
-                    <a class="search-submit search-btn" href="./pages/filter.html">Найти</a>
+                    <button class="search-submit search-btn">Найти</button>
                 </div>
             </form>
             <div class="seasn-stock content">

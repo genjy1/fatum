@@ -1941,6 +1941,6 @@ input[type = 'checkbox']{
     margin-top: 10px;
 }
 
-.screen__wrapper{
-    backdrop-filter: blur(2px);
+.hide{
+    display: none;
 }
