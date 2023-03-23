@@ -1940,3 +1940,7 @@ input[type = 'checkbox']{
 .reset__wrapper{
     margin-top: 10px;
 }
+
+.screen__wrapper{
+    backdrop-filter: blur(2px);
+}

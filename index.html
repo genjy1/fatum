@@ -81,168 +81,170 @@
             </div>
         </div>
     </header>
-    <div class="screen content">
-        <div class="heading__wrapper">
-            <h2 class="screen-heading">ПОДБОР И ПОКУПКА
-                НЕДВИЖИМОСТИ <span class="heading-span">ПЕРЕЕЗД В ТУРЦИЮ</span>
-            </h2>
-            <button class="wrapper-booking">
-                <a href="#" class="booking-link link">Записаться на консультацию</a>
-            </button>
-        </div>
-        <form class="form" action="./pages/filter.html" id="filter" method="get">
-            <label for="filter" class="filter__label">
-                <div class="objects__wrapper">
-                    <div class="objects-options">
-                        <label for="citySelect" class="options__label">Города</label>
-                        <select name="citySelect" id="citySelect" class="filter__select">
-                            <option value="all" class="citySelect-option select-option">Все</option>
-                            <option value="cyprus" class="citySelect-option select-option">Северный Кипр</option>
-                            <option value="alanya" class="citySelect-option select-option">Аланья</option>
-                        </select>
-                    </div>
-                </div>
+    <div class="screen">
+        <div class="screen__wrapper content">
+            <div class="heading__wrapper">
+                <h2 class="screen-heading">ПОДБОР И ПОКУПКА
+                    НЕДВИЖИМОСТИ <span class="heading-span">ПЕРЕЕЗД В ТУРЦИЮ</span>
+                </h2>
+                <button class="wrapper-booking">
+                    <a href="#" class="booking-link link">Записаться на консультацию</a>
+                </button>
+            </div>
+            <form class="form" action="./pages/filter.html" id="filter" method="get">
+                <label for="filter" class="filter__label">
                     <div class="objects__wrapper">
                         <div class="objects-options">
-                            <label for="districtSelect" class="options__label">Районы</label>
-                            <select name="districtSelect" id="districtSelect" class="filter__select">
-                                <option value="all" class="district-option select-option">Все</option>
-                                <option value="gazipasha" class="district-option select-option">Газипаша</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options">
-                            <label for="citySelect" class="options__label">Комнат</label>
+                            <label for="citySelect" class="options__label">Города</label>
                             <select name="citySelect" id="citySelect" class="filter__select">
-                                <option value="1+0" class="citySelect-option select-option">1+0</option>
-                                <option value="1+1" class="citySelect-option select-option">1+1</option>
-                                <option value="2+1" class="citySelect-option select-option">2+1</option>
-                                <option value="3+1" class="citySelect-option select-option">3+1</option>
-                                <option value="4+1" class="citySelect-option select-option">4+1</option>
-                                <option value="5+1" class="citySelect-option select-option">5+1</option>
-                                <option value="6+1" class="citySelect-option select-option">6+1</option>
-                                <option value="7+1" class="citySelect-option select-option">7+1</option>
+                                <option value="all" class="citySelect-option select-option">Все</option>
+                                <option value="cyprus" class="citySelect-option select-option">Северный Кипр</option>
+                                <option value="alanya" class="citySelect-option select-option">Аланья</option>
                             </select>
                         </div>
                     </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options" id="price">
-                            <label for="citySelect" class="options__label">Цена</label>
-                            <div class="cost__wrapper range__wrapper">
-                                <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
-                                <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                        <div class="objects__wrapper">
+                            <div class="objects-options">
+                                <label for="districtSelect" class="options__label">Районы</label>
+                                <select name="districtSelect" id="districtSelect" class="filter__select">
+                                    <option value="all" class="district-option select-option">Все</option>
+                                    <option value="gazipasha" class="district-option select-option">Газипаша</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="objects__wrapper">
+                            <div class="objects-options">
+                                <label for="citySelect" class="options__label">Комнат</label>
+                                <select name="citySelect" id="citySelect" class="filter__select">
+                                    <option value="1+0" class="citySelect-option select-option">1+0</option>
+                                    <option value="1+1" class="citySelect-option select-option">1+1</option>
+                                    <option value="2+1" class="citySelect-option select-option">2+1</option>
+                                    <option value="3+1" class="citySelect-option select-option">3+1</option>
+                                    <option value="4+1" class="citySelect-option select-option">4+1</option>
+                                    <option value="5+1" class="citySelect-option select-option">5+1</option>
+                                    <option value="6+1" class="citySelect-option select-option">6+1</option>
+                                    <option value="7+1" class="citySelect-option select-option">7+1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="objects__wrapper">
+                            <div class="objects-options" id="price">
+                                <label for="citySelect" class="options__label">Цена</label>
+                                <div class="cost__wrapper range__wrapper">
+                                    <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                                    <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objects__wrapper">
+                            <div class="objects-options" id="idNumber">
+                                <label for="citySelect" class="options__label">ID</label>
+                                <div class="search__wrapper">
+                                    <input type="search" name="idFinder" id="options-search" placeholder="№">
+                                </div>
+                            </div>
+                        </div>
+                </label>
+                <label for="filter" class="more-filters__label">
+                    <div class="more-filters__label_wrapper">
+                        <div class="objects__wrapper">
+                            <div class="objects-options" id="price">
+                                <label for="citySelect" class="options__label">Площадь</label>
+                                <div class="cost__wrapper range__wrapper">
+                                    <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                                    <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objects__wrapper">
+                            <div class="objects-options" id="price">
+                                <label for="citySelect" class="options__label">Инфраструктура</label>
+                                <div class="search__wrapper">
+                                    <input type="search" name="idFinder" id="options-search" placeholder="№">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objects__wrapper">
+                            <div class="objects-options" id="price">
+                                <label for="citySelect" class="options__label">Преимущества</label>
+                                <div class="search__wrapper">
+                                    <input type="search" name="idFinder" id="options-search" placeholder="№">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objects__wrapper">
+                            <div class="objects-options" id="price">
+                                <label for="citySelect" class="options__label">До моря</label>
+                                <div class="sea__wrapper range__wrapper">
+                                    <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                                    <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objects__wrapper">
+                            <div class="objects-options" id="price">
+                                <label for="citySelect" class="options__label">Этажность</label>
+                                <div class="floor__wrapper range__wrapper">
+                                    <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                                    <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options" id="idNumber">
-                            <label for="citySelect" class="options__label">ID</label>
-                            <div class="search__wrapper">
-                                <input type="search" name="idFinder" id="options-search" placeholder="№">
-                            </div>
-                        </div>
+                    <div class="objects__wrapper reset__wrapper">           
+                        <button type="reset" class="btn">Сбросить фильтр</button>
                     </div>
-            </label>
-            <label for="filter" class="more-filters__label">
-                <div class="more-filters__label_wrapper">
-                    <div class="objects__wrapper">
-                        <div class="objects-options" id="price">
-                            <label for="citySelect" class="options__label">Площадь</label>
-                            <div class="cost__wrapper range__wrapper">
-                                <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
-                                <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
-                            </div>
-                        </div>
+                </label>
+                <div class="search__wrapper">
+                    <button class="more-filters btn">Больше фильтров</button>
+                    <a class="search-submit search-btn" href="./pages/filter.html">Найти</a>
+                </div>
+            </form>
+            <div class="seasn-stock content">
+                <div class="stock__wrapper">
+                    <h2 class="stock-heading">Бесплатный Инфотур!Наша компания оплатит вам:</h2>
+                    <p class="stock-description">- Индивидуальный трансфер из аэропорта и обратно 120€
+                        На выбор:<br>
+                        - Апартаменты люкс 40-50€/сутки для всей Вашей семьи на 5 дней
+                        <br>- Либо 5* отель с системой ALL INCLUSIVE 80€/сутки за номер, на 5 дней</p>
+                    <div class="stock__inputs-wrapper">
+                        <input type="text" class="stock-name stock-input" placeholder="Ваше имя">
+                        <input type="text" class="stock-number stock-input" placeholder="Ваш телефон">
+                        <input type="submit" class="stock-submit stock-input" placeholder="Отправить" value="Отправить">
                     </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options" id="price">
-                            <label for="citySelect" class="options__label">Инфраструктура</label>
-                            <div class="search__wrapper">
-                                <input type="search" name="idFinder" id="options-search" placeholder="№">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options" id="price">
-                            <label for="citySelect" class="options__label">Преимущества</label>
-                            <div class="search__wrapper">
-                                <input type="search" name="idFinder" id="options-search" placeholder="№">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options" id="price">
-                            <label for="citySelect" class="options__label">До моря</label>
-                            <div class="sea__wrapper range__wrapper">
-                                <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
-                                <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="objects__wrapper">
-                        <div class="objects-options" id="price">
-                            <label for="citySelect" class="options__label">Этажность</label>
-                            <div class="floor__wrapper range__wrapper">
-                                <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
-                                <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
-                            </div>
-                        </div>
+                    <div class="personaldata-checkbox">
+                        <input type="checkbox" name="personaldata" id="personaldata" checked>
+                        <p class="personaldata-text">Даю согласие на обработку <a href="#" class="persdata-link link">персональных данных</a></p>
                     </div>
                 </div>
-                <div class="objects__wrapper reset__wrapper">           
-                    <button type="reset" class="btn">Сбросить фильтр</button>
-                </div>
-            </label>
-            <div class="search__wrapper">
-                <button class="more-filters btn">Больше фильтров</button>
-                <a class="search-submit search-btn" href="./pages/filter.html">Найти</a>
             </div>
-        </form>
-        <div class="seasn-stock content">
-            <div class="stock__wrapper">
-                <h2 class="stock-heading">Бесплатный Инфотур!Наша компания оплатит вам:</h2>
-                <p class="stock-description">- Индивидуальный трансфер из аэропорта и обратно 120€
-                    На выбор:<br>
-                    - Апартаменты люкс 40-50€/сутки для всей Вашей семьи на 5 дней
-                    <br>- Либо 5* отель с системой ALL INCLUSIVE 80€/сутки за номер, на 5 дней</p>
-                <div class="stock__inputs-wrapper">
-                    <input type="text" class="stock-name stock-input" placeholder="Ваше имя">
-                    <input type="text" class="stock-number stock-input" placeholder="Ваш телефон">
-                    <input type="submit" class="stock-submit stock-input" placeholder="Отправить" value="Отправить">
+            <section class="experience">
+                <h2 class="experience-heading">ПРИЧИНЫ ВЫБРАТЬ НАС</h2>
+                <div class="experience__cards">
+                    <div class="cards__item">
+                        <div class="square" style="background-image: url('./img/icons/installment.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
+                        <h3 class="item-heading">БЕСПРОЦЕНТНАЯ
+                            РАССРОЧКА</h3>
+                        <p class="item-text">ДО КОНЦА СТРОИТЕЛЬСТВА</p>
+                    </div>
+                    <div class="cards__item">
+                        <div class="square" style="background-image: url('./img/icons/free-icon-online-payment-3573097.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
+                        <h3 class="item-heading">УДОБНЫЙ И</h3>
+                        <p class="item-text">БЕЗОПАСНЫЙ СПОСОБ ОПЛАТЫ</p>
+                    </div>
+                    <div class="cards__item">
+                        <div class="square" style="background-image: url('./img/icons/free-icon-legal-document-2957143.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
+                        <h3 class="item-heading">НА ВСЕХ ЭТАПАХ</h3>
+                        <p class="item-text">УЧАСТИЕ ЮРИСТА</p>
+                    </div>
+                    <div class="cards__item">
+                        <div class="square" style="background-image: url('./img/icons/free-icon-legal-document-2957143.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
+                        <h3 class="item-heading">Бесплатный послепродажный сервис</h3>
+                        <p class="item-text">и помощь в оформлении документов</p>
+                    </div>
                 </div>
-                <div class="personaldata-checkbox">
-                    <input type="checkbox" name="personaldata" id="personaldata" checked>
-                    <p class="personaldata-text">Даю согласие на обработку <a href="#" class="persdata-link link">персональных данных</a></p>
-                </div>
-            </div>
+            </section>
         </div>
-        <section class="experience">
-            <h2 class="experience-heading">ПРИЧИНЫ ВЫБРАТЬ НАС</h2>
-            <div class="experience__cards">
-                <div class="cards__item">
-                    <div class="square" style="background-image: url('./img/icons/installment.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
-                    <h3 class="item-heading">БЕСПРОЦЕНТНАЯ
-                        РАССРОЧКА</h3>
-                    <p class="item-text">ДО КОНЦА СТРОИТЕЛЬСТВА</p>
-                </div>
-                <div class="cards__item">
-                    <div class="square" style="background-image: url('./img/icons/free-icon-online-payment-3573097.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
-                    <h3 class="item-heading">УДОБНЫЙ И</h3>
-                    <p class="item-text">БЕЗОПАСНЫЙ СПОСОБ ОПЛАТЫ</p>
-                </div>
-                <div class="cards__item">
-                    <div class="square" style="background-image: url('./img/icons/free-icon-legal-document-2957143.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
-                    <h3 class="item-heading">НА ВСЕХ ЭТАПАХ</h3>
-                    <p class="item-text">УЧАСТИЕ ЮРИСТА</p>
-                </div>
-                <div class="cards__item">
-                    <div class="square" style="background-image: url('./img/icons/free-icon-legal-document-2957143.png'); background-size: 85%;background-repeat: no-repeat;background-position: 50%;"></div>
-                    <h3 class="item-heading">Бесплатный послепродажный сервис</h3>
-                    <p class="item-text">и помощь в оформлении документов</p>
-                </div>
-            </div>
-        </section>
     </div>
     <h1 class="fatum content">fatum</h1>
     <div class="bestoffers content" id="bestoffers">

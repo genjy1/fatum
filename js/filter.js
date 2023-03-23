@@ -1,6 +1,6 @@
 'use strict';
 const city = window.location.search.slice(2,9);
-
+const district = window.location.search.includes('district');
 
 if (city === 'cyprus') {
     document.querySelectorAll('.vertical__card').forEach(e =>{
