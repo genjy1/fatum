@@ -605,7 +605,6 @@ label.filter__label{
 .search__wrapper{
     display: flex;
     justify-content: space-between;
-    gap: 981px;
 }
 
 .res__wrapper{
