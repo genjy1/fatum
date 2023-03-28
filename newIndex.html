@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatum Invest - Недвижимость в Турции</title>
+    <link rel="stylesheet" href="./css/newStyle.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icons/logo-short.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/itc-slider.css"> 
+    <script src="./js/itc-slider.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper content">
+            <a href="newIndex.html" class="logo-link link"><img src="./img/icons/logo.svg" alt="Fatum Invest Logo" class="logo-img"></a>
+            <nav class="nav header__nav">
+                <ul class="header__nav-list">
+                    <li class="nav-list_item"><a href="newIndex.html" class="nav-list_item-link link">Главная</a></li>
+                    <li class="nav-list_item"><a href="newIndex.html#about" class="nav-list_item-link link">О нас</a></li>
+                    <li class="nav-list_item"><a href="newIndex.html#clients" class="nav-list_item-link link">Наши клиенты</a></li>
+                    <li class="nav-list_item"><a href="newIndex.html#catalog" class="nav-list_item-link link">Наш каталог</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+905528004404" class="call-link link ">+905528004404</a>
+        </div>
+    </header>
+    <div class="screen">
+        <h1 class="screen-header">Ваш личный гид на рынке недвижимости в Турции </h1>
+    </div>
+    <form class="form content" action="./pages/filter.html" id="filter" method="get">
+        <label for="filter" class="filter__label">
+            <div class="objects__wrapper">
+                <div class="objects-options">
+                    <label for="citySelect" class="options__label">Города</label>
+                    <select name="citySelect" id="citySelect" class="filter__select">
+                        <option value="all" class="citySelect-option select-option">Все</option>
+                        <option value="cyprus" class="citySelect-option select-option">Северный Кипр</option>
+                        <option value="alanya" class="citySelect-option select-option">Аланья</option>
+                    </select>
+                </div>
+            </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options">
+                        <label for="districtSelect" class="options__label">Районы</label>
+                        <select name="districtSelect" id="districtSelect" class="filter__select">
+                            <option value="all" class="district-option select-option">Все</option>
+                            <option value="gazipasha" class="district-option select-option">Газипаша</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options">
+                        <label for="citySelect" class="options__label">Комнат</label>
+                        <select name="citySelect" id="citySelect" class="filter__select">
+                            <option value="1+0" class="citySelect-option select-option">1+0</option>
+                            <option value="1+1" class="citySelect-option select-option">1+1</option>
+                            <option value="2+1" class="citySelect-option select-option">2+1</option>
+                            <option value="3+1" class="citySelect-option select-option">3+1</option>
+                            <option value="4+1" class="citySelect-option select-option">4+1</option>
+                            <option value="5+1" class="citySelect-option select-option">5+1</option>
+                            <option value="6+1" class="citySelect-option select-option">6+1</option>
+                            <option value="7+1" class="citySelect-option select-option">7+1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="price">
+                        <label for="citySelect" class="options__label">Цена</label>
+                        <div class="cost__wrapper range__wrapper">
+                            <input type="text" name="costFrom" id="costFrom" class="cost-input" placeholder="От">
+                            <input type="text" name="costTo" id="costTo" class="cost-input" placeholder="До">
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <div class="objects-options" id="idNumber">
+                        <label for="citySelect" class="options__label">ID</label>
+                        <div class="search__wrapper">
+                            <input type="search" name="idFinder" id="options-search" placeholder="№">
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__wrapper">
+                    <button class="search-submit search-btn">Найти</button>
+                </div>
+        </label>
+        </label>
+        <a href="../pages/filter.html" class="link">Больше фильтров</a>
+    </form>
+    <main class="main content">
+        <div class="cards__wrapper">
+            <div class="card">
+                <div class="card-img" style="background-image: url(./img/project\ 2.png)"></div>
+                <h3 class="card-name">Новый проект! Инновационный проект жилого  комплекса  отельного
+                    типа-Авсаллар</h3>
+                <ul class="card-features">
+                    <li class="features-item">Комнат:</li>
+                    <li class="features-item">Площадь:</li>
+                    <li class="features-item">Район:</li>
+                </ul>
+                <p class="card-cost">Цены: </p>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(./img/P-4.png)"></div>
+                <h3 class="card-name">Идеальный Проект для гражданство🇹🇷 
+                    с великолепной набережной и пляжем.</h3>
+                <ul class="card-features">
+                    <li class="features-item">Комнат:</li>
+                    <li class="features-item">Площадь:</li>
+                    <li class="features-item">Район:</li>
+                </ul>
+                <p class="card-cost">Цены: </p>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(./img/P-5.png)"></div>
+                <h3 class="card-name">Проект элитных вилл под 
+                    гражданство Турции🇹
+                    🇷</h3>
+                <ul class="card-features">
+                    <li class="features-item">Комнат:</li>
+                    <li class="features-item">Площадь:</li>
+                    <li class="features-item">Район:</li>
+                </ul>
+                <p class="card-cost">Цены: </p>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(./img/P-6.png)">
+                    </div>
+                <h3 class="card-name">Квартиры в центре Аланьи 
+                    под  гражданство!</h3>
+                <ul class="card-features">
+                    <li class="features-item">Комнат:</li>
+                    <li class="features-item">Площадь:</li>
+                    <li class="features-item">Район:</li>
+                </ul>
+                <p class="card-cost">Цены: </p>
+            </div>
+        </div>
+        <a href="../pages/objects.html" class="see-more link">Посмотреть все</a>
+    </main>
+    <div class="screen-profitable">
+        <div class="profitable__wrapper content">
+            <h2 class="profitable-header">ПОЧЕМУ ВЫГОДНО ПОКУПАТЬ НЕДВИЖИМОСТЬ В ТУРЦИИ</h2>
+            <h3 class="profitable-underheader">Если вы ещё раздумываете стоит ли купить недвижимость в Турции или нет,то
+                Fatum Invest предлагает несколько причин, почему это стоит сделать:</h3>
+            <div class="screen-profitable__cards">
+                <div class="card card-profit">
+                    <img src="./img/график.png" alt="" class="card-icon">
+                    <h3 class="card-header">Выгодное инвестирование</h3>
+                    <p class="card-text">Уникальные природные условия,
+                    благоприятная обстановка, хорошее
+                    качество строительства и 
+                    постоянный спрос на жилье
+                    со стороны иностранцев
+                    делают покупку недвижимости
+                    в Турции прибыльным
+                    вложением
+                    </p>
+                </div>
+                <div class="card card-profit">
+                    <img src="./img/images.png" alt="" class="card-icon">
+                    <h3 class="card-header">Широкий выбор ценовых 
+                    предложений</h3>
+                    <p class="card-text">От скромных квартир студий и 
+                        недорогих вторичных  вариантов 
+                        до роскошных вилл и элитных
+                        комплексов. В нашем каталоге вы
+                        можете убедиться в многообразии
+                        предложений!
+                    </p>
+                    </div>
+                <div class="card card-profit">
+                    <img src="./img/мешок с монетами.png" alt="" class="card-icon">
+                    <h3 class="card-header">Выбор условий оплаты</h3>
+                    <p class="card-text">
+                        Возможность приобретения в 
+                    рассрочку или в кредит по 
+                    выгодным условиям, что дает
+                    больше вариантов для покупки 
+                    жилья в данной стране.
+                    </p>
+                </div>
+                <div class="card card-profit">
+                    <img src="./img/Ellipse 7.png" alt="" class="card-icon">
+                    <h3 class="card-header">Лояльные условия для 
+                    постоянного проживания</h3>
+                    <p class="card-text">
+                        Владелец жилья и его ближайшие
+                        родственники имеют право
+                        оформления вида на жительство в 
+                        Турции.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infotour">
+    </div>
+    <div class="row__wrapper content">
+        <div class="row ">
+            <div class="three">
+                <div class="long">Элитная недвижимость</div>
+                <div class="small__wrapper">
+                    <div class="small">Недвижимость в рассрочку</div>
+                    <div class="small">Недвижимость на первой линии</div>
+                </div>
+            </div>
+            <aside class="aside">Недвижимость от застройщика</aside>
+        </div>
+        <div class="row">
+            <aside class="aside">Квартиры в Турции</aside>
+            <div class="three">
+                <div class="long">Дома в Турции</div>
+                <div class="small__wrapper">
+                    <div class="small">Недорогая недвижимость</div>
+                    <div class="small">Аренда недвижимости</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages content">
+        <h2 class="advantages-header">ПРЕИМУЩЕСТВА СОТРУДНИЧЕСТВА С
+            АГЕНТСТВОМ FATUM INVEST</h2>
+        <div class="advantages__cards-wrapper">
+            <div class="card advantage-card">
+                <h3 class="card-header">Большой выбор</h3>
+                <p class="card-text">
+                    Наша компания предлагает
+                широкий выбор турецкого 
+                жилья на любой вкус. Мы
+                располагаем большой базой
+                недвижимости в Турции, в 
+                которой вы обязательно 
+                найдете ту, которая 
+                соответствует Вашему 
+                бюджету и пожеланиям - 
+                от уютных недорогих 
+                квартир- студий до 
+                роскошных вилл с видом
+                на море
+                </p>
+            </div>
+            <div class="card advantage-card">
+                <h3 class="card-header">Индивидуальный подход</h3>
+                <p class="card-text">
+                    Менеджеры нашего агенства
+                    работают индивидуально
+                    с каждым клиентом,
+                    соблюдают 
+                    конфиденциальность,
+                    а если вы не нашли на
+                    сайте нужный объект, мы
+                    индивидуально для вас
+                    осуществим подбор
+                    вариантов
+                </p>
+            </div>
+            <div class="card advantage-card">
+                <h3 class="card-header">
+                    Постоянный послепродажный сервис
+                </h3>
+                <p class="card-text">
+                    В любое время мы решаем 
+                    вопросы, которые у вас
+                    могут возникнуть после 
+                    покупки недвижимости в
+                    Турции, помощь в переводе
+                    консультации или просто
+                    дружеские советы
+                </p>
+            </div>
+            <div class="card advantage-card">
+                <h3 class="card-header">Консультация</h3>
+                <p class="card-text">
+                    Мы говорим по-русски 
+                и всегда отстаиваем интересы
+                клиента. в разделе контакты вы 
+                можете узнать подробнее о 
+                процедуре оформления 
+                недвижимости в Турции, 
+                а также получите 
+                квалифицированную 
+                консультацию!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="reviews content">
+        <h2 class="reviews-title">Отзывы</h2>
+        <div class="cards__wrapper">
+            <div class="card">
+                <h3 class="card-name">
+                    Виктория. Россия, Москва
+                </h3>
+                <p class="card-text">
+                    От всей души, огромное Спасибо Юле. Для меня очень важно 
+                    чтобы меня окружали люди которым можно доверять
+                    и на которых можно опереться в любой ситуации. 
+                    А если ситуация сложная и от из нее просто непонятно 
+                    как выйти,то это ценится 10-ти кратно. Я даже представить
+                    не могла что риэлтер можетне просто помочь найти и
+                    купить квартиру мечты, а стать буквально членом семьи.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="card-name">
+                    Александр Белорусь, Минск
+                </h3>
+                <p class="card-text">
+                    Всем добрый день. Хотел оставить отзыв об агентстве  и в  
+                    частности о сотруднице по имени Алтын.Хотели приобрести 
+                    квартиру на этапе строительства.Алтын очень оперативно
+                    нашла нам несколько вариантов в нашем бюджете с 
+                    хорошими застройщиками и с соблюдением всех 
+                    необходимых нам условий. Рекомендую Fatum Invest
+                    всем. Не пожалеете. Работа на высшем уровне.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="card-name">
+                    Алла Казахстан
+                </h3>
+                <p class="card-text">
+                    Хотим выразить искренние слова 
+                    благодаргости агенству Fatum Invest за помощь
+                    в приобретении нашей прекрасной квартиры
+                    на берегу Средиземного моря, в чудесном
+                    уютном городе Газипаша. Хочу поблагодарить
+                    Эльмиру за то что помогла нам в поиске
+                    квартиру. Всем рекомендую агенство 
+                    Fatum Invest.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer content">
+        <div class="footer__wrapper">
+            <div class="footer__col"><a href="../" class="link logo-link"><img src="./img/icons/logo.svg" alt=""></a></div>
+            <div class="footer__col">
+                Адрес
+                <ul class="footer__list">
+                    <li class="footer__list-item">Mahmutlar mahallesi 109 Nolu  sokak 12/B</li>
+                </ul>
+            </div>
+            <div class="footer__col">                <h2 class="col-heading">Контакты</h2>
+                <div class="col__row">
+                    <p class="call-rectangle col-rectangle">TR</p>
+                    <p class="row-phone">+90 552 800 44 04</p>
+                </div>
+                <div class="col__row">
+                    <p class="call-rectangle col-rectangle">RU</p>
+                    <p class="row-phone">+ 7 927 143 04-22</p>
+                </div>
+                <div class="col__row">
+                    <p class="call-rectangle col-rectangle email-rectangle"><img src="./img/icons/email white.svg" alt="" class="rectangle-img rectangle-email_img"></p>
+                    <p class="row-email">fatuminvest@gmail.com</p>
+                </div></div>
+            <div class="footer__col">
+                Присоединяйтесь к нам
+                <div class="socials">
+                    <a href="" class="social-link"><img class="social-img" src="./img/телега.png" alt=""></a>
+                    <a href="https://www.tiktok.com/@fatum_invest" class="social-link"><img class="social-img" src="./img/тик ток.png" alt=""></a>
+                    <a href="" class="social-link"><img class="social-img" src="./img/Instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="other-info">
+            <p class="">Политика конфиденциальности</p>
+            <p>2023@FATUM INVEST -, недвижимость в турции</p>
+        </div>
+    </footer>
+</body>
+</html>

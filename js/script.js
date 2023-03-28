@@ -29,15 +29,15 @@ moreFilters.addEventListener('click',e => {
 
 const filterOptCity = document.querySelector('#citySelect');
 filterOptCity.addEventListener('click', e =>{
-    console.log(filterOpt.value);
+    console.log('Город'+' '+filterOptCity.value);
     const filterLink = document.querySelector('.search-submit');
     filterLink.setAttribute('href',`../pages/filter.html?=${filterOptCity.value}`)
 });
-const filterOpt = document.querySelector('#districtSelect');
-filterOpt.addEventListener('click', e =>{
-    console.log(filterOpt.value);
+const filterOptDistrict = document.querySelector('#districtSelect');
+filterOptDistrict.addEventListener('click', e =>{
+    console.log('Район'+' '+filterOptDistrict.value);
     const filterLink = document.querySelector('.search-submit');
-    filterLink.setAttribute('href',`../pages/filter.html?=${filterOpt.value}`)
+    filterLink.setAttribute('href',`../pages/filter.html?=${filterOptDistrict.value}`)
 });
 
 heart.forEach(e => e.removeAttribute('href'));
@@ -59,7 +59,7 @@ close.forEach(e => e.addEventListener('click',()=>{
 }));
 
 for (let i = 0; i < cardId.length; i++) {
-    let cards = document.querySelectorAll('.card')
+    let cards = document.querySelectorAll('.card');
     cards[i].setAttribute('data-id',i);
     cardId[i].textContent = 'FA' + i;
 }

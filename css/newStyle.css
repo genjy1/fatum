@@ -1,0 +1,395 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #FFF;
+}
+
+.content{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-img{
+    max-width: 315px;
+}
+
+.logo-link{
+    display: block;
+    width: 315px;
+}
+
+.header__nav-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.call-link{
+    background-color: #06c206;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 29px;
+    border-radius: 50px;
+    background-image: url(../img/icons/389390-200.png);
+    background-repeat: no-repeat;
+    background-position: 10%;
+}
+
+.screen{
+    background-image: url(../img/Untitled-1\ Frame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.screen-header{
+    padding: 154px 954px 590px 139px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(179,160,93);
+    background: linear-gradient(90deg, rgba(179,160,93,1) 0%, rgba(214,191,109,1) 50%, rgba(230,179,0,1) 100%);
+    padding: 25px;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label.filter__label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.objects__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-filters__label_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.objects-options{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn{
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+    color: #FFF;
+    padding: 13px;
+    font-family: 'Inter',sans-serif;
+    color: white;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.search-btn{
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+    color: #FFF;
+    padding: 13px;
+    font-family: 'Inter',sans-serif;
+    color: white;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.card-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 228px;
+}
+
+.card{
+    padding: 15px 20px;
+    max-width: 395px;
+    background-color: #9ea5a6;
+}
+
+.cards__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-name{
+    text-align: center;
+    max-width: 255px;
+}
+
+.card-features{
+    border-bottom: 1px solid #303a39;
+}
+
+.features-item{
+    max-width: 295px;
+    margin: 0 auto;
+}
+
+.card-cost{
+    max-width: 295px;
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.see-more{
+    text-align: center;
+    padding: 5px 29px;
+    background: #f19c22;
+    max-width: 443px;
+    margin:  0 auto;
+    border-radius: 6px;
+}
+
+.profitable-header{
+    text-align: center;
+}
+
+.profitable-underheader{
+    text-align: center;
+    max-width: 864px;
+    margin: 0 auto;
+}
+
+.screen-profitable{
+    background-image: url(../img/Untitled-2.png);
+}
+
+.screen-profitable__cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.card-header{
+    margin-top: 24px;
+    margin-bottom: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-profit{
+    padding: 0;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 26px;
+    padding:45px 10px;
+}
+
+.card-text{
+    max-width: 325px;
+    text-align: center;
+}
+
+.card-icon{
+    max-width: 128px;
+    margin:0 auto;
+}
+
+.row{
+    display: flex;
+    gap: 30px;
+}
+
+.row:first-child{
+    margin-bottom: 30px;
+}
+
+.long{
+    max-width: 1100px;
+    color: #e0cb19;
+    background: #9ea5a6;
+    border-radius: 26px;
+    text-align: center;
+    padding: 145px 470px;
+}
+
+.aside{
+    max-width: 200px;
+    color: #e0cb19;
+    padding: 250px 85px;
+    background: #9ea5a6;
+    border-radius: 26px;
+}
+
+.three{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small{
+    padding: 100px 170px;
+    background: #9ea5a6;
+}
+
+.row__wrapper{
+    margin-top: 15px;
+}
+
+.small__wrapper{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.advantages__cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage-card{
+    max-width: 295px;
+    border-radius: 26px;
+    padding: 65px 10px;
+}
+
+.advantages-header{
+    text-align: center;
+    padding: 24px 0 24px;
+}
+/* .small:not(:nth-child(odd)){
+    margin-right: 10px;
+} */
+
+.reviews .card{
+    border-radius: 16px;
+    background: #a7a094;
+}
+
+.reviews .card .card-name{
+    max-width: 100%;
+}
+
+.reviews-title{
+    font-size: 48px;
+    font-weight: 700;
+    padding: 50px 0 30px;
+    text-align: center;
+}
+
+.footer__wrapper{
+    padding: 30px 0 26px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__links-wrapper{
+    display: flex;
+    max-width: 186px;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.footer__col{
+    /* margin:  0; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.footer__col:nth-child(1){
+    margin: 0;
+}
+/* .footer__col:nth-child(2){
+    margin: 0;
+} */
+.footer__col:nth-child(3){
+    margin: 0;
+}
+
+.col__row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.logo-link{
+    max-width: 139px;
+}
+
+.col-heading{
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.call-rectangle{
+    font-size: 12px;
+    max-width: 16px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    background-color: #B3A05D;
+}
+
+.col-rectangle{
+    margin-right: 3px;
+}
+
+.email-rectangle{
+    padding: 0;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 16px;
+}
+
+.social-img{
+    max-width: 39px;
+    display: block;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer__wrapper{
+    border-bottom:1px solid #e4e4e4;
+}
+
+.other-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0 38px;
+}

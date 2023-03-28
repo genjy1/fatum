@@ -11,7 +11,7 @@ window.addEventListener('click',function (event) {
         console.log(card.querySelector('.img').style);
         // console.log(card.querySelector('.img').getAttribute('style'));
         const prodInf = {
-            imgSrc: card.querySelector('.img').style.backgroundImage,
+            imgSrc: card.querySelector('.img').style,
             prodName: card.querySelector('.card-text').textContent,
             prodDistrict:card.querySelector('.card-district').textContent,
             prodRooms:card.querySelector('.card-rooms').textContent,
@@ -22,7 +22,7 @@ window.addEventListener('click',function (event) {
         
         if (window.screen.width < 426) {
             const favItemHTML = `<div class="vertical__card card">
-            <div style=${prodInf.imgSrc} class="img vertical-img card-img"></div>
+            <div style=(${prodInf.imgSrc}) class="img vertical-img card-img"></div>
                 <div class="vertical__cards-text__wrapper cards-text__wrapper">
                     <p class="card-id"></p>
                     <p class="card-text">${prodInf.prodName}</p>
@@ -90,12 +90,12 @@ window.addEventListener('click',function (event) {
     };
     if (event.target.dataset.action === 'minus') {
         if (event.target.closest('.fav__wrapper')) {
-            event.target.closest('.fav__card').remove();
+            event.target.closest('.card').remove();
             this.localStorage.removeItem('favItem');
         }   
     };
 });
-if (localStorage.getItem('favItem') != null) {
+if (localStorage.getItem('favItem') !== null) {
     favWrapper.innerHTML = localStorage.getItem('favItem');
 };
 

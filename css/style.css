@@ -20,12 +20,9 @@
         display: flex;
         flex-wrap: wrap;
     }
-
-
     .res__wrapper{
         text-align: right;
     }
-
     .fav__wrapper{
         max-height: 713px;
         position: absolute;
@@ -96,6 +93,10 @@
     }
 }
 @media screen and (max-width:425px) {
+    .more-filters__label_wrapper{
+        flex-direction: column;
+    }
+
     .more__content{
         width: 380px;
     }
@@ -121,6 +122,8 @@
 
     .objects__wrapper{
         margin-bottom: 10px;
+        align-items: center;
+        flex-direction: column;
     }
 
     .options__wrapper{
@@ -645,21 +648,20 @@ label.filter__label{
 .cards__item{
     background-color: #B3A05D;
     max-width: 273px;
-    padding: 24px 24px 7px;
+    padding: 24px;
     border-radius: 6px;
 }
 
 .item-heading{
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     color: #FFFFFF;
     text-transform: uppercase;
     margin-top: 10px;
 }
 
 .item-text{
-    margin-top: 10px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -1942,4 +1944,8 @@ input[type = 'checkbox']{
 
 .hide{
     display: none;
+}
+
+.stock-heading {
+    text-transform: uppercase;
 }

@@ -1,14 +1,14 @@
 'use strict';
-const city = window.location.search.slice(2,9);
-const district = window.location.search.includes('district');
+const search = window.location.search;
 
-if (city === 'cyprus') {
+
+if (search.includes('cyprus')) {
     document.querySelectorAll('.vertical__card').forEach(e =>{
         if (e.dataset.city !== 'cyprus'){
             e.remove();
         }
     });
-}else if (city === 'alanya'){
+}else if (search.includes('alanya')){
     document.querySelectorAll('.vertical__card').forEach(e =>{
         if (e.dataset.city !== 'alanya'){
             e.remove();
