@@ -86,7 +86,12 @@
                     </div>
                 </div>
                 <div class="objects__wrapper">
-                    <button class="search-submit search-btn">Найти</button>
+                    <div class="objects-options search-options" id="idNumber">
+                        <label for="searchBtn" class="options__label"></label>
+                        <div class="search__wrapper">
+                            <button class="search-submit search-btn" id="searchBtn">Найти</button>
+                        </div>
+                    </div>
                 </div>
         </label>
         </label>
@@ -141,7 +146,9 @@
                 <p class="card-cost">Цены: </p>
             </div>
         </div>
-        <a href="../pages/objects.html" class="see-more link">Посмотреть все</a>
+        <div class="link__wrapper">
+            <a href="../pages/objects.html" class="see-more link">Посмотреть все</a>
+        </div>
     </main>
     <div class="screen-profitable">
         <div class="profitable__wrapper content">
@@ -303,13 +310,13 @@
                     и на которых можно опереться в любой ситуации. 
                     А если ситуация сложная и от из нее просто непонятно 
                     как выйти,то это ценится 10-ти кратно. Я даже представить
-                    не могла что риэлтер можетне просто помочь найти и
+                    не могла что риэлтор может не просто помочь найти и
                     купить квартиру мечты, а стать буквально членом семьи.
                 </p>
             </div>
             <div class="card">
                 <h3 class="card-name">
-                    Александр Белорусь, Минск
+                    Александр Беларусь, Минск
                 </h3>
                 <p class="card-text">
                     Всем добрый день. Хотел оставить отзыв об агентстве  и в  
@@ -336,6 +343,21 @@
                     Fatum Invest.
                 </p>
             </div>
+        </div>
+        <button class="review-btn btn">оставить отзыв</button>
+    </div>
+    <div class="questions">
+        <div class="questions__wrapper content">
+            <h2 class="questions-title title">Появились вопросы?</h2>
+            <form action="./newIndex.html" method="get" id="questionsForm">
+                <div class="inputs__wrapper">
+                    <input type="text" class="question-input" placeholder="Ваше имя">
+                    <input type="text" class="question-input" placeholder="Ваш e-mail">
+                    <input type="text" class="question-input" placeholder="+7 912 345-67-89">
+                    <input type="text" class="question-input" placeholder="Ваше сообщение">
+                </div>
+                <button class="questions-btn btn">Подписаться</button>
+            </form>
         </div>
     </div>
     <footer class="footer content">
